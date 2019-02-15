@@ -1,0 +1,6 @@
+(setq tab-width 4)
+(setq tab-stop-list (number-sequence 4 200 4))
+(setq scroll-step 2)
+(setq prelude-flyspell nil)
+(setq prelude-guru nil)
+(setq create-lockfiles nil)
