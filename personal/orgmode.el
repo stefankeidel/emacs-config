@@ -4,3 +4,5 @@
 (setq org-agenda-files (list "~/org/idagio.org"
                              "~/org/stefan.org"
                              "~/org/notes.org"))
+
+(org-agenda-list)
