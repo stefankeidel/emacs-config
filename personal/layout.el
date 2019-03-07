@@ -9,3 +9,8 @@
 
 ;; font size
 (set-face-attribute 'default nil :height 140)
+
+(require 'doom-modeline)
+(doom-modeline-mode 1)
+
+(setq doom-modeline-buffer-file-name-style 'file-name)
