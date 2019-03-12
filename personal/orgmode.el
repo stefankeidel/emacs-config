@@ -23,12 +23,25 @@
               ("QUEUE" :foreground "LightSalmon1" :weight bold)
               ("STARTED" :foreground "PeachPuff2" :weight bold))))
 
-;; these tags are available everywhere, in addition to those per file
-(setq org-tag-persistent-alist '(("@work" . ?w) ("@home" . ?h)))
+(setq org-tag-alist (quote ((:startgroup)
+                            ("@errand" . ?e)
+                            ("@work" . ?w)
+                            ("@home" . ?h)
+                            (:endgroup)
+                            ;; stakeholders
+                            ("liz" . ?l)
+                            ("max" . ?m)
+                            ("finance" . ?f)
+                            ("payment" . ?p)
+                            ("chore" . ?c))))
 
 (setq org-capture-templates '(("t" "Todo [inbox]" entry
                                (file+headline "~/org/inbox.org" "Tasks")
                                "* TODO %i%?")
-                              ))
+                              ("c" "Calendar" entry
+                               (file+headline "~/org/calendar.org" "from template")
+                               "* %i%? \n %U")))
 
-(org-agenda-list)
+(setq org-refile-targets '(("~/org/todo.org" :maxlevel . 2)
+                           ("~/org/calendar.org" :maxlevel . 1)
+                           ("~/org/reading.org" :maxlevel . 1)))

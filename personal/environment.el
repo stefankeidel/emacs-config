@@ -1,2 +1,3 @@
-(setq default-directory "~/Documents/idagio" )
-(dired "~/Documents/idagio")
+(require 'workgroups)
+(workgroups-mode 1)
+(wg-load "~/.emacs.d/org-start-layout")
