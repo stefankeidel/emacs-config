@@ -6,3 +6,4 @@
 (global-set-key (kbd "s-.") 'mc/mark-next-like-this)
 (global-set-key (kbd "s-d") 'mc/mark-all-like-this)
 (global-set-key (kbd "s-,") 'easy-mark)
+(global-set-key (kbd "C-c c") 'org-capture)

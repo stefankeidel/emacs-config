@@ -3,12 +3,13 @@
 
 (setq org-agenda-files (list "~/org/todo.org"
                              "~/org/notes.org"
-                             "~/org/birthdays.org"
+                             "~/org/inbox.org"
+                             "~/org/calendar.org"
                              "~/org/reading.org"))
 
 (setq org-todo-keywords
-      (quote ((sequence "TODO(t)" "PROGRESS(p)" "|" "DONE(d)")
-              (sequence "WAITING(w@/!)" "HOLD(h@/!)" "|" "CANCELLED(c@/!)" "MEETING"))))
+      (quote ((sequence "TODO(t)" "PROGRESS(p!)" "|" "DONE(d!)")
+              (sequence "WAITING(w@/!)" "HOLD(h@/!)" "|" "CANCELLED(c@/!)" "MEETING(m)"))))
 
 (setq org-todo-keyword-faces
       (quote (("TODO" :foreground "indian red" :weight bold)
@@ -24,5 +25,10 @@
 
 ;; these tags are available everywhere, in addition to those per file
 (setq org-tag-persistent-alist '(("@work" . ?w) ("@home" . ?h)))
+
+(setq org-capture-templates '(("t" "Todo [inbox]" entry
+                               (file+headline "~/org/inbox.org" "Tasks")
+                               "* TODO %i%?")
+                              ))
 
 (org-agenda-list)
