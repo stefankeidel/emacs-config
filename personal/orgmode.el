@@ -1,5 +1,4 @@
 (require 'org)
-(setq org-default-notes-file (concat org-directory "/notes.org"))
 
 (setq org-agenda-files (list "~/org/todo.org"
                              "~/org/notes.org"
@@ -45,3 +44,10 @@
 (setq org-refile-targets '(("~/org/todo.org" :maxlevel . 2)
                            ("~/org/calendar.org" :maxlevel . 1)
                            ("~/org/reading.org" :maxlevel . 1)))
+
+;; one big archive for everything
+(setq org-archive-location '"archive.org::")
+
+;; start emacs with todo list open
+(find-file "~/org/todo.org")
+(org-mode-restart)

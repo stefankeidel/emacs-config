@@ -14,3 +14,13 @@
 ;; (doom-modeline-mode 1)
 
 ;; (setq doom-modeline-buffer-file-name-style 'file-name)
+(setq ivy-initial-inputs-alist '((counsel-package . "^+ ")
+                                 (org-refile . "")
+                                 (org-agenda-refile . "")
+                                 (org-capture-refile . "")
+                                 (counsel-M-x . "")
+                                 (counsel-describe-function . "")
+                                 (counsel-describe-variable . "")
+                                 (counsel-org-capture . "")
+                                 (Man-completion-table . "")
+                                 (woman . "^")))
