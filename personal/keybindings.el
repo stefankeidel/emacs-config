@@ -7,3 +7,5 @@
 (global-set-key (kbd "s-d") 'mc/mark-all-like-this)
 (global-set-key (kbd "s-,") 'easy-mark)
 (global-set-key (kbd "C-c c") 'counsel-org-capture)
+
+(global-set-key (kbd "C-x w") 'elfeed)
