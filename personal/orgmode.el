@@ -48,6 +48,9 @@
 ;; one big archive for everything
 (setq org-archive-location '"archive.org::")
 
+(setq org-agenda-skip-scheduled-if-deadline-is-shown t)
+(setq org-agenda-skip-deadline-if-done t)
+
 ;; start emacs with todo list open
 (find-file "~/org/todo.org")
 (org-mode-restart)
