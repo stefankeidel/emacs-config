@@ -8,7 +8,7 @@
              '(vertical-scroll-bars . nil))
 
 ;; font size
-(set-face-attribute 'default nil :height 140)
+(set-face-attribute 'default nil :height 150)
 
 ;; (require 'doom-modeline)
 ;; (doom-modeline-mode 1)
