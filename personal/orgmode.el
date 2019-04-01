@@ -41,7 +41,7 @@
                                (file+headline "~/org/calendar.org" "from template")
                                "* %i%? \n %U")))
 
-(setq org-refile-targets '(("~/org/todo.org" :maxlevel . 2)
+(setq org-refile-targets '(("~/org/todo.org" :maxlevel . 1)
                            ("~/org/calendar.org" :maxlevel . 1)
                            ("~/org/reading.org" :maxlevel . 1)))
 
@@ -50,7 +50,9 @@
 
 (setq org-agenda-skip-scheduled-if-deadline-is-shown t)
 (setq org-agenda-skip-deadline-if-done t)
+(setq org-agenda-include-diary t)
 
 ;; start emacs with todo list open
 (find-file "~/org/todo.org")
 (org-mode-restart)
+(org-agenda-list)
