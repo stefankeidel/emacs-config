@@ -52,6 +52,11 @@
 (setq org-agenda-skip-deadline-if-done t)
 (setq org-agenda-include-diary t)
 
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((python . t)))
+
+
 ;; start emacs with todo list open
 (find-file "~/org/todo.org")
 (org-mode-restart)
