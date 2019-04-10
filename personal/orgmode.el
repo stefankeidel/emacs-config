@@ -7,11 +7,12 @@
                              "~/org/reading.org"))
 
 (setq org-todo-keywords
-      (quote ((sequence "TODO(t)" "PROGRESS(p!)" "|" "DONE(d!)")
+      (quote ((sequence "TODO(t)" "SOMEDAY(s)" "PROGRESS(p!)" "|" "DONE(d!)")
               (sequence "WAITING(w@/!)" "HOLD(h@/!)" "|" "CANCELLED(c@/!)" "MEETING(m)"))))
 
 (setq org-todo-keyword-faces
       (quote (("TODO" :foreground "indian red" :weight bold)
+              ("SOMEDAY" :foreground "LightSalmon1" :weight bold)
               ("PROGRESS" :foreground "sky blue" :weight bold)
               ("DONE" :foreground "forest green" :weight bold)
               ("WAITING" :foreground "orange" :weight bold)
@@ -39,7 +40,11 @@
                                "* TODO %i%?")
                               ("c" "Calendar" entry
                                (file+headline "~/org/calendar.org" "from template")
-                               "* %i%? \n %U")))
+                               "* %i%? \n %U")
+                              ("s" "Standup" entry
+                               (file+headline "~/org/notes.org" "Standups")
+                               "** %t\n*** yesterday\n -%?\n*** today\n -\n")
+                              ))
 
 (setq org-refile-targets '(("~/org/todo.org" :maxlevel . 1)
                            ("~/org/calendar.org" :maxlevel . 1)
