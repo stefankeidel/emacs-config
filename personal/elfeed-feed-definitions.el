@@ -45,23 +45,27 @@
         ("https://www.ccc.de/rss/updates.rdf" security)
 
                                         ; emacs
-        ("https://asylum.madhouse-project.org/blog/atom.xml" emacs)
-        ("http://www.masteringemacs.org/feed/" emacs)
-        ("http://pragmaticemacs.com/feed/" emacs)
-        ("https://emacsredux.com/atom.xml" emacs)
+        ("https://asylum.madhouse-project.org/blog/atom.xml" emacs blog)
+        ("http://www.masteringemacs.org/feed/" emacs blog)
+        ("http://pragmaticemacs.com/feed/" emacs blog)
+        ("https://emacsredux.com/atom.xml" emacs blog)
 
                                         ; entertainment
         ("https://www.xkcd.com/rss.xml" comic)
 
                                         ; travel
-        ("https://www.awaywithmaja.com/feed" travel)
+        ("https://www.awaywithmaja.com/feed" travel blog)
 
                                         ; bike stuff
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UC710HJmp-YgNbE5BnFBRoeg" bikes) ; gcn tech
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCuTaETsuCOkJ0H_GAztWt0Q" bikes) ; gcn
+        ("http://bikesnobnyc.blogspot.com/feeds/posts/default" bikes blog)
+        ("http://feeds.feedburner.com/inrng/inrng0" bikes blog)
+        ("http://feeds.feedburner.com/redkiteprayer/krin" bikes blog)
+
 
                                         ; hard news
-        ("http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" nyt news important) ; very spammy, needs custom tag
+        ("http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" nyt news) ; very spammy, needs custom tag
 
         ))
 

@@ -8,7 +8,10 @@
              '(vertical-scroll-bars . nil))
 
 ;; font size
-(set-face-attribute 'default nil :height 150)
+;(set-face-attribute 'default nil :height 155)
+
+(set-face-attribute 'default nil
+                    :family "Hack Nerd Font" :height 155)
 
 ;; (require 'doom-modeline)
 ;; (doom-modeline-mode 1)
