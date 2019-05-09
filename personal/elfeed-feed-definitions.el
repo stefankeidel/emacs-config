@@ -78,3 +78,5 @@
   (lambda ()
     (interactive)
     (elfeed-link-title elfeed-show-entry)))
+
+(elfeed)

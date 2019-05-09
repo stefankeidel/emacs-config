@@ -66,6 +66,6 @@
 
 
 ;; start emacs with todo list open
-(find-file "~/org/todo.org")
-(org-mode-restart)
-(org-agenda-list)
+;(find-file "~/org/todo.org")
+;(org-mode-restart)
+;(org-agenda-list)

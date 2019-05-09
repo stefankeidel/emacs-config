@@ -9,3 +9,4 @@
 (global-set-key (kbd "C-c c") 'counsel-org-capture)
 
 (global-set-key (kbd "C-x w") 'elfeed)
+(global-unset-key (kbd "C-c w")) ; this usually does the super/cmd/whatever switch. kept hitting it by accident when trying to open elfeeds ;-)
