@@ -43,7 +43,10 @@
                                "* %i%? \n %U")
                               ("s" "Standup" entry
                                (file+headline "~/org/notes.org" "Standups")
-                               "** %t\n*** yesterday\n -%?\n*** today\n -\n")
+                               "** Standup %t\n*** yesterday\n-%?\n*** today\n-\n")
+                              ("r" "Reading List" entry
+                               (file+headline "~/org/reading.org" "from template")
+                               "** QUEUE %?")
                               ))
 
 (setq org-refile-targets '(("~/org/todo.org" :maxlevel . 1)

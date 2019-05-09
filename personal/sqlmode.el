@@ -24,5 +24,9 @@
                                (apply server (split-string line ":" t)))))
             (mapcar pgpass-line config))))
 
+(add-hook 'sql-interactive-mode-hook
+          (lambda ()
+            (toggle-truncate-lines t)))
+
 ;;; Actually populating sql-connection-alist
 (setq sql-connection-alist (pgpass-to-sql-connection (read-file "~/.pgpass")))
