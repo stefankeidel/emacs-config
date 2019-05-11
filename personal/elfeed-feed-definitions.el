@@ -38,12 +38,12 @@
       '(
                                         ; useful geek stuff
         ("http://nullprogram.com/feed/" programming)
-        ("https://hnrss.org/frontpage" hn)
-        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCUHW94eEFW7hkUMVaZz4eDg" physics) ; minutephysics
-        ("https://blog.cloudflare.com/rss/" blog security)
+        ("https://hnrss.org/frontpage" hn maybe)
+        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCUHW94eEFW7hkUMVaZz4eDg" physics interesting) ; minutephysics
+        ("https://blog.cloudflare.com/rss/" blog security interesting)
 
-        ("https://events.ccc.de/feed/" events security)
-        ("https://www.ccc.de/rss/updates.rdf" security)
+        ("https://events.ccc.de/feed/" events security interesting)
+        ("https://www.ccc.de/rss/updates.rdf" security interesting)
 
                                         ; emacs
         ("https://asylum.madhouse-project.org/blog/atom.xml" emacs blog)
@@ -63,10 +63,9 @@
         ("http://bikesnobnyc.blogspot.com/feeds/posts/default" bikes blog)
         ("http://feeds.feedburner.com/inrng/inrng0" bikes)
         ("http://feeds.feedburner.com/redkiteprayer/krin" bikes)
-        ;("http://www.reddit.com/r/bicycling/.rss" bikes)
 
                                         ; hard news
-        ("http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" nyt news) ; very spammy, needs custom tag
+        ("http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" nyt news maybe) ; very spammy, needs custom tag
 
         ))
 
@@ -76,8 +75,15 @@
   '((t :foreground "#f77"))
   "interesting elfeed entry")
 
+(defface maybe-elfeed-entry
+  '((t :foreground "grey"))
+  "maybe elfeed entry")
+
 (push '(interesting interesting-elfeed-entry)
-  elfeed-search-face-alist)
+      elfeed-search-face-alist)
+
+(push '(maybe maybe-elfeed-entry)
+      elfeed-search-face-alist)
 
 (define-key elfeed-show-mode-map "l"
   (lambda ()
