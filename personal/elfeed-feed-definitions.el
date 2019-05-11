@@ -40,6 +40,7 @@
         ("http://nullprogram.com/feed/" programming)
         ("https://hnrss.org/frontpage" hn)
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCUHW94eEFW7hkUMVaZz4eDg" physics) ; minutephysics
+        ("https://blog.cloudflare.com/rss/" blog security)
 
         ("https://events.ccc.de/feed/" events security)
         ("https://www.ccc.de/rss/updates.rdf" security)
@@ -60,9 +61,9 @@
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UC710HJmp-YgNbE5BnFBRoeg" bikes) ; gcn tech
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCuTaETsuCOkJ0H_GAztWt0Q" bikes) ; gcn
         ("http://bikesnobnyc.blogspot.com/feeds/posts/default" bikes blog)
-        ("http://feeds.feedburner.com/inrng/inrng0" bikes blog)
-        ("http://feeds.feedburner.com/redkiteprayer/krin" bikes blog)
-
+        ("http://feeds.feedburner.com/inrng/inrng0" bikes)
+        ("http://feeds.feedburner.com/redkiteprayer/krin" bikes)
+        ;("http://www.reddit.com/r/bicycling/.rss" bikes)
 
                                         ; hard news
         ("http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" nyt news) ; very spammy, needs custom tag
