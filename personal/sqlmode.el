@@ -1,6 +1,7 @@
 ;;; FROM https://stackoverflow.com/questions/5734965/how-can-i-get-emacs-sql-mode-to-use-the-mysql-config-file-my-cnf/46114944#46114944
 
 (require 'sql)
+;(require 'ob-sql-mode)
 
 ;;; .pgpass parser
 (defun read-file (file)
@@ -24,9 +25,17 @@
                                (apply server (split-string line ":" t)))))
             (mapcar pgpass-line config))))
 
+;;; Actually populating sql-connection-alist
+(setq sql-connection-alist (pgpass-to-sql-connection (read-file "~/.pgpass")))
+
 (add-hook 'sql-interactive-mode-hook
           (lambda ()
             (toggle-truncate-lines t)))
 
-;;; Actually populating sql-connection-alist
-(setq sql-connection-alist (pgpass-to-sql-connection (read-file "~/.pgpass")))
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((sql . t)))
+
+(setq org-confirm-babel-evaluate
+      (lambda (lang body)
+        (not (string= lang "sql"))))

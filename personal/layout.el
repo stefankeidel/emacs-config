@@ -27,3 +27,9 @@
                                  (counsel-org-capture . "")
                                  (Man-completion-table . "")
                                  (woman . "^")))
+
+(set-face-background 'mode-line          "#4466aa")
+(set-face-background 'mode-line-inactive "#99aaff")
+;(set-face-background 'fringe "#809088")
+
+(nyan-mode)

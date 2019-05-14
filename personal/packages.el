@@ -5,7 +5,9 @@
     py-autopep8
     exec-path-from-shell
     multiple-cursors
-    material-theme))
+    material-theme
+    zenburn-theme
+    nyan-mode))
 
 (mapc #'(lambda (package)
     (unless (package-installed-p package)
