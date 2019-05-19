@@ -41,6 +41,7 @@
         ("https://hnrss.org/frontpage" hn maybe)
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCUHW94eEFW7hkUMVaZz4eDg" physics interesting) ; minutephysics
         ("https://blog.cloudflare.com/rss/" blog security interesting)
+        ("https://datawhatnow.com/feed" blog interesting)
 
         ("https://events.ccc.de/feed/" events security interesting)
         ("https://www.ccc.de/rss/updates.rdf" security interesting)
@@ -56,6 +57,9 @@
 
                                         ; travel
         ("https://www.awaywithmaja.com/feed" travel blog)
+
+                                        ;environment
+        ("https://www.gatesnotes.com/RSS" environment blog)
 
                                         ; bike stuff
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UC710HJmp-YgNbE5BnFBRoeg" bikes) ; gcn tech

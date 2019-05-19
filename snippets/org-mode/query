@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: query
+# key: q
+# --
+#+begin_src sql :engine postgresql
+  $0
+#+end_src
