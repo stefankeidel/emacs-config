@@ -6,3 +6,5 @@
 (setq prelude-guru nil)
 (setq-default create-lockfiles nil)
 (setq-default whitespace-line-column 120)
+
+(add-to-list 'recentf-exclude "\/var\/folders\/")
