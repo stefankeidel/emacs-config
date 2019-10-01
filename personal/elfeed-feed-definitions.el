@@ -38,9 +38,8 @@
       '(
                                         ; useful geek stuff
         ("http://nullprogram.com/feed/" programming)
-        ("https://hnrss.org/frontpage" hn maybe)
+        ("https://hnrss.org/frontpage" hn maybe) ; spammy custom tag
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCUHW94eEFW7hkUMVaZz4eDg" physics interesting) ; minutephysics
-        ("https://blog.cloudflare.com/rss/" blog security)
         ("https://datawhatnow.com/feed" blog interesting)
 
         ("https://events.ccc.de/feed/" events security interesting)
@@ -64,7 +63,6 @@
                                         ; bike stuff
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UC710HJmp-YgNbE5BnFBRoeg" bikes) ; gcn tech
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCuTaETsuCOkJ0H_GAztWt0Q" bikes) ; gcn
-        ("http://bikesnobnyc.blogspot.com/feeds/posts/default" bikes blog)
         ("http://feeds.feedburner.com/inrng/inrng0" bikes)
         ("http://feeds.feedburner.com/redkiteprayer/krin" bikes)
 
