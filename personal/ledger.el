@@ -2,9 +2,10 @@
 
 (setq ledger-reports
       (quote
-       (("register" "ledger ")
-        ("bal" "ledger -f %(ledger-file) --price-db ./prices.db -V bal Assets Liabilities")
-        ("bigbal" "ledger -f %(ledger-file) bal Assets Liabilities")
-        ("reg" "ledger -f %(ledger-file) reg")
-        ("payee" "ledger -f %(ledger-file) reg @%(payee)")
-        ("account" "ledger -f %(ledger-file) reg %(account)"))))
+       (("baldaily" "ledger -f %(ledger-file) bal '^assets:comdirect|^assets:gls|^liabilities' --empty")
+        ("totalbudget" "ledger --monthly -S -T -f %(ledger-file) bal ^assets:budget")
+        ("lastmonthbudget" "ledger --monthly -S -T -f %(ledger-file) bal ^assets:budget --period 'last month'")
+        ("currentbudget" "ledger --monthly -S -T -f %(ledger-file) bal ^assets:budget --period 'this month'")
+        ("networth" "ledger --real -V --price-db market.db -f %(ledger-file) bal '^assets|^liabilities'")
+        ("networthovertime" "ledger --real --market --price-db market.db -f %(ledger-file) reg '^assets|^liabilities' --collapse --monthly -O")
+        )))
