@@ -41,7 +41,7 @@
                                "* TODO %i%?")
                               ("c" "Calendar" entry
                                (file+headline "~/org/calendar.org" "from template")
-                               "* %i%? \n %U")
+                               "* %i%? \n   %t")
                               ("s" "Standup" entry
                                (file+headline "~/org/notes.org" "Standups")
                                "** Standup %t\n*** yesterday\n-%?\n*** today\n-\n")
