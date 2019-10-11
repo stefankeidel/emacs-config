@@ -4,7 +4,8 @@
                              "~/org/notes.org"
                              "~/org/inbox.org"
                              "~/org/calendar.org"
-                             "~/org/reading.org"))
+                             "~/org/reading.org"
+                             "~/org/journal.org"))
 
 (setq org-todo-keywords
       (quote ((sequence "TODO(t)" "SOMEDAY(s)" "PROGRESS(p!)" "|" "DONE(d!)")
@@ -44,6 +45,9 @@
                               ("s" "Standup" entry
                                (file+headline "~/org/notes.org" "Standups")
                                "** Standup %t\n*** yesterday\n-%?\n*** today\n-\n")
+                              ("j" "Journal" entry
+                               (file+headline "~/org/journal.org" "Journal")
+                               "** Entry %t\n-%?\n")
                               ("r" "Reading List" entry
                                (file+headline "~/org/reading.org" "from template")
                                "** QUEUE %?")
@@ -64,8 +68,7 @@
  'org-babel-load-languages
  '((python . t)))
 
-
-;; start emacs with todo list open
-;(find-file "~/org/todo.org")
-;(org-mode-restart)
-;(org-agenda-list)
+;start emacs with todo list open
+(find-file "~/org/todo.org")
+(org-mode-restart)
+(org-agenda-list)
