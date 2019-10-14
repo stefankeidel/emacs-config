@@ -8,3 +8,9 @@
 (setq-default whitespace-line-column 120)
 
 (add-to-list 'recentf-exclude "\/var\/folders\/")
+
+(require 'smart-forward)
+(global-set-key (kbd "s-<up>") 'smart-up)
+(global-set-key (kbd "s-<down>") 'smart-down)
+(global-set-key (kbd "s-<left>") 'smart-backward)
+(global-set-key (kbd "s-<right>") 'smart-forward)
