@@ -45,6 +45,8 @@
         ("https://events.ccc.de/feed/" events security interesting)
         ("https://www.ccc.de/rss/updates.rdf" security interesting)
 
+        ("https://protonmail.com/blog/feed/" security interesting)
+
                                         ; emacs
         ("https://asylum.madhouse-project.org/blog/atom.xml" emacs blog)
         ("http://www.masteringemacs.org/feed/" emacs blog)
