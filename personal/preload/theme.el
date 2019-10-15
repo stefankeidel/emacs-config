@@ -1,5 +1,7 @@
 (setq prelude-theme 'zenburn)
 
+;(setq prelude-theme 'base16-zenburn)
+
 ;(require 'doom-themes)
 
 ;; Global settings (defaults)

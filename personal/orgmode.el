@@ -1,9 +1,8 @@
 (require 'org)
 
-(setq org-agenda-files (list "~/org/todo.org"
-                             "~/org/notes.org"
+(setq org-agenda-files (list "~/org/stefan.org"
+                             "~/org/idagio.org"
                              "~/org/inbox.org"
-                             "~/org/calendar.org"
                              "~/org/reading.org"
                              "~/org/journal.org"))
 
@@ -40,10 +39,10 @@
                                (file+headline "~/org/inbox.org" "Tasks")
                                "* TODO %i%?")
                               ("c" "Calendar" entry
-                               (file+headline "~/org/calendar.org" "from template")
+                               (file+headline "~/org/inbox.org" "Calendar")
                                "* %i%? \n   %t")
                               ("s" "Standup" entry
-                               (file+headline "~/org/notes.org" "Standups")
+                               (file+headline "~/org/idagio.org" "standups")
                                "** Standup %t\n*** yesterday\n-%?\n*** today\n-\n")
                               ("j" "Journal" entry
                                (file+headline "~/org/journal.org" "Journal")
@@ -53,11 +52,12 @@
                                "** QUEUE %?")
                               ))
 
-(setq org-refile-targets '(("~/org/todo.org" :maxlevel . 1)
-                           ("~/org/calendar.org" :maxlevel . 1)
-                           ("~/org/reading.org" :maxlevel . 1)))
+(setq org-refile-targets '(("~/org/stefan.org" :maxlevel . 2)
+                           ("~/org/reading.org" :maxlevel . 1)
+                           ("~/org/idagio.org" :maxlevel . 2)
+                           ))
 
-;; one big archive for everything
+;; one big archive for everything [file-specific rules still apply and override]
 (setq org-archive-location '"archive.org::")
 
 (setq org-agenda-skip-scheduled-if-deadline-is-shown t)
@@ -69,6 +69,6 @@
  '((python . t)))
 
 ;start emacs with todo list open
-(find-file "~/org/todo.org")
-(org-mode-restart)
-(org-agenda-list)
+;; (find-file "~/org/todo.org")
+;; (org-mode-restart)
+;; (org-agenda-list)
