@@ -68,6 +68,12 @@
  'org-babel-load-languages
  '((python . t)))
 
+;; visual line mode for org
+(add-hook 'org-mode-hook
+          (lambda ()
+            (visual-line-mode t))
+          t)
+
 ;start emacs with todo list open
 ;; (find-file "~/org/todo.org")
 ;; (org-mode-restart)
