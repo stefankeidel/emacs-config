@@ -39,3 +39,14 @@
 (setq org-confirm-babel-evaluate
       (lambda (lang body)
         (not (string= lang "sql"))))
+
+;(setq explicit-shell-file-name "/usr/local/bin/zsh")
+(exec-path-from-shell-copy-env "ANALYTICS_REDSHIFT_DWH_DB")
+
+(defun idagio-run-on-redshift ()
+  "run the file of the current buffer on Redshift"
+  (interactive)
+  (shell-command
+   (format "psql %s -v ON_ERROR_STOP=1 --single-transaction --file=%s"
+           (shell-quote-argument (getenv "ANALYTICS_REDSHIFT_DWH_DB"))
+           (shell-quote-argument (buffer-file-name)))))
