@@ -46,7 +46,7 @@
 (defun idagio-run-on-redshift ()
   "run the file of the current buffer on Redshift"
   (interactive)
-  (shell-command
+  (async-shell-command
    (format "psql %s -v ON_ERROR_STOP=1 --single-transaction --file=%s"
            (shell-quote-argument (getenv "ANALYTICS_REDSHIFT_DWH_DB"))
            (shell-quote-argument (buffer-file-name)))))
