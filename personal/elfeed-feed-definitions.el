@@ -40,6 +40,7 @@
         ("http://nullprogram.com/feed/" programming)
         ("https://hnrss.org/frontpage" hn maybe) ; spammy custom tag
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCUHW94eEFW7hkUMVaZz4eDg" physics interesting) ; minutephysics
+        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCoxcjq-8xIDTYp3uz647V5A" interesting) ; numberphile
         ("https://datawhatnow.com/feed" blog interesting)
 
         ("https://events.ccc.de/feed/" events security interesting)
@@ -65,6 +66,7 @@
                                         ; bike stuff
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UC710HJmp-YgNbE5BnFBRoeg" bikes) ; gcn tech
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCuTaETsuCOkJ0H_GAztWt0Q" bikes) ; gcn
+        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCGamtiY212YK76rDI4IhCGg" bikes) ; cyclingabout
         ("http://feeds.feedburner.com/inrng/inrng0" bikes)
         ("http://feeds.feedburner.com/redkiteprayer/krin" bikes)
 
