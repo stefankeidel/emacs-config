@@ -30,6 +30,16 @@
      (format "dbt run --models %s+"
              (shell-quote-argument (file-name-base (buffer-file-name)))))))
 
+(defun idagio-dbt-run-models-lineage ()
+  "Run dbt with the entire lineage from the current buffer (including the current one)"
+  (interactive)
+
+  (let ((default-directory "~/Documents/idagio/idagio-dbt/"))
+    (async-shell-command
+     (format "dbt run --models +%s+"
+             (shell-quote-argument (file-name-base (buffer-file-name)))))))
+
+
 (defun kill-buffer-basename ()
   "Kill buffer basename"
   (interactive)
