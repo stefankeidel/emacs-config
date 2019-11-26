@@ -12,3 +12,9 @@
 (global-unset-key (kbd "C-c w")) ; this usually does the super/cmd/whatever switch. kept hitting it by accident when trying to open elfeeds ;-)
 
 (global-set-key (kbd "s-e") 'ivy-switch-buffer)
+
+(global-set-key (kbd "s-i s") 'idagio-dbt-search-model-name)
+(global-set-key (kbd "s-i c") 'idagio-dbt-compile)
+(global-set-key (kbd "s-i r") 'idagio-dbt-run-model)
+(global-set-key (kbd "s-i t") 'idagio-dbt-test-model)
+(global-set-key (kbd "s-i k") 'kill-buffer-basename)

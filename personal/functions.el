@@ -76,3 +76,10 @@
   "Kill buffer basename"
   (interactive)
   (kill-new (file-name-base (buffer-file-name))))
+
+
+(defun idagio-dbt-search-model-name ()
+  "Search for model name, as defined by basename of current file"
+  (interactive)
+
+  (projectile-ag (file-name-base (buffer-file-name))))
