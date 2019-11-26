@@ -45,6 +45,15 @@
      (format "dbt run --models %s+"
              (shell-quote-argument (file-name-base (buffer-file-name)))))))
 
+(defun idagio-dbt-run-model ()
+  "Run dbt with model from the current buffer"
+  (interactive)
+
+  (let ((default-directory "~/Documents/idagio/idagio-analytics-scripts/dbt/"))
+    (async-shell-command
+     (format "dbt run --models %s"
+             (shell-quote-argument (file-name-base (buffer-file-name)))))))
+
 (defun idagio-dbt-run-models-lineage ()
   "Run dbt with the entire lineage from the current buffer (including the current one)"
   (interactive)
@@ -52,6 +61,15 @@
   (let ((default-directory "~/Documents/idagio/idagio-analytics-scripts/dbt/"))
     (async-shell-command
      (format "dbt run --models +%s+"
+             (shell-quote-argument (file-name-base (buffer-file-name)))))))
+
+(defun idagio-dbt-test-model ()
+  "Run all model tests for model defined by current buffer"
+  (interactive)
+
+  (let ((default-directory "~/Documents/idagio/idagio-analytics-scripts/dbt/"))
+    (async-shell-command
+     (format "dbt test --models %s"
              (shell-quote-argument (file-name-base (buffer-file-name)))))))
 
 (defun kill-buffer-basename ()
