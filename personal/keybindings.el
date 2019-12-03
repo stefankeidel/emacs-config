@@ -13,8 +13,10 @@
 
 (global-set-key (kbd "s-e") 'ivy-switch-buffer)
 
-(global-set-key (kbd "s-i s") 'idagio-dbt-search-model-name)
-(global-set-key (kbd "s-i c") 'idagio-dbt-compile)
+(global-set-key (kbd "s-i s") 'idagio-dbt-search-model)
+(global-set-key (kbd "s-i c") 'idagio-dbt-clean-compile)
 (global-set-key (kbd "s-i r") 'idagio-dbt-run-model)
 (global-set-key (kbd "s-i t") 'idagio-dbt-test-model)
+(global-set-key (kbd "s-i f") 'idagio-dbt-find-compiled)
+(global-set-key (kbd "s-i d") 'idagio-dbt-run-models-downstream)
 (global-set-key (kbd "s-i k") 'kill-buffer-basename)

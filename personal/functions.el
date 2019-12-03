@@ -20,12 +20,12 @@
   (let ((default-directory "~/Documents/idagio/idagio-analytics-scripts/dbt/"))
     (async-shell-command "dbt run")))
 
-(defun idagio-dbt-compile ()
-  "Run dbt"
+(defun idagio-dbt-clean-compile ()
+  "Clean+compile dbt"
   (interactive)
 
   (let ((default-directory "~/Documents/idagio/idagio-analytics-scripts/dbt/"))
-    (async-shell-command "dbt compile")))
+    (async-shell-command "dbt clean && dbt deps && dbt compile")))
 
 (defun idagio-dbt-run-models-interactive (model)
   "Run dbt with model selection entered by user"
@@ -78,8 +78,17 @@
   (kill-new (file-name-base (buffer-file-name))))
 
 
-(defun idagio-dbt-search-model-name ()
+(defun idagio-dbt-search-model ()
   "Search for model name, as defined by basename of current file"
   (interactive)
 
   (projectile-ag (file-name-base (buffer-file-name))))
+
+
+(defun idagio-dbt-find-compiled ()
+  "Search for model name, as defined by basename of current file"
+  (interactive)
+
+  (find-name-dired
+   "~/Documents/idagio/idagio-analytics-scripts/dbt/target/compiled/idagio_analytics/"
+   (concat (file-name-base (buffer-file-name)) ".sql")))
