@@ -42,6 +42,7 @@
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCUHW94eEFW7hkUMVaZz4eDg" physics interesting) ; minutephysics
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCoxcjq-8xIDTYp3uz647V5A" interesting) ; numberphile
         ("https://datawhatnow.com/feed" blog interesting)
+        ("https://plaintextproject.online/feed.xml" blog interesting)
 
         ("https://events.ccc.de/feed/" events security interesting)
         ("https://www.ccc.de/rss/updates.rdf" security interesting)
