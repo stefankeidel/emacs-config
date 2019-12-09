@@ -15,7 +15,7 @@
   (append sql-connection-alist
           (let ((server (lambda (host port db user _pass)
                           (list
-                           (concat db ":" user ":" port ":" host)
+                           (concat db)
                            (list 'sql-product ''postgres)
                            (list 'sql-server host)
                            (list 'sql-user user)
