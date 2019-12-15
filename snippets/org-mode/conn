@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: conn
+# key: c
+# --
+:dbconnection analytics_dwh
