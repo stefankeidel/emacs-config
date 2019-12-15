@@ -3,5 +3,6 @@
 # key: q
 # --
 #+begin_src sql :engine postgresql :dbconnection analytics_dwh
-  $0
+select *
+from analytics.$0
 #+end_src
