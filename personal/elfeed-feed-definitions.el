@@ -72,7 +72,7 @@
         ("http://feeds.feedburner.com/redkiteprayer/krin" bikes)
 
                                         ; hard news
-        ("http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" nyt news maybe) ; very spammy, needs custom tag
+        ;("http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" nyt news maybe) ; very spammy, needs custom tag
 
         ))
 
