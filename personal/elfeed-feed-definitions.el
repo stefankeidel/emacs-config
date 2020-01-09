@@ -70,6 +70,7 @@
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCGamtiY212YK76rDI4IhCGg" bikes) ; cyclingabout
         ("http://feeds.feedburner.com/inrng/inrng0" bikes)
         ("http://feeds.feedburner.com/redkiteprayer/krin" bikes)
+        ("http://feeds.feedburner.com/marginalrevolution/feed" blog)
 
                                         ; hard news
         ;("http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" nyt news maybe) ; very spammy, needs custom tag
