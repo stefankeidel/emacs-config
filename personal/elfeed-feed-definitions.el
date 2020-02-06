@@ -48,6 +48,8 @@
         ("https://www.ccc.de/rss/updates.rdf" security interesting)
 
         ("https://protonmail.com/blog/feed/" security interesting)
+        ("https://www.benkuhn.net/rss/" blog)
+        ("https://metaredux.com/feed.xml" blog)
 
                                         ; emacs
         ("https://asylum.madhouse-project.org/blog/atom.xml" emacs blog)
@@ -71,9 +73,6 @@
         ("http://feeds.feedburner.com/inrng/inrng0" bikes)
         ("http://feeds.feedburner.com/redkiteprayer/krin" bikes)
         ("http://feeds.feedburner.com/marginalrevolution/feed" blog)
-
-                                        ; hard news
-        ;("http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" nyt news maybe) ; very spammy, needs custom tag
 
         ))
 
