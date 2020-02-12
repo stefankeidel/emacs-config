@@ -66,7 +66,7 @@
 
 (org-babel-do-load-languages
  'org-babel-load-languages
- '((python . t)))
+ '((python . t) (ein . t)))
 
 ;; visual line mode for org
 ;; (add-hook 'org-mode-hook
