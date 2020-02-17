@@ -27,6 +27,7 @@
                             ("@errand" . ?e)
                             ("@work" . ?w)
                             ("@home" . ?h)
+                            ("@routine" . ?r)
                             (:endgroup)
                             ;; stakeholders
                             ("liz" . ?l)
@@ -67,6 +68,17 @@
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((python . t) (ein . t)))
+
+(add-to-list 'org-modules 'org-habit t)
+
+(setq org-agenda-custom-commands
+      '(("a" "Agenda and Work tasks"
+         ((agenda "")
+          (tags-todo "@work")
+          (tags-todo "@home")
+          ))
+        ))
+
 
 ;; visual line mode for org
 ;; (add-hook 'org-mode-hook
