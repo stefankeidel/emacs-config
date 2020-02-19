@@ -44,13 +44,14 @@
         ("https://datawhatnow.com/feed" blog interesting)
         ("https://plaintextproject.online/feed.xml" blog interesting)
 
-        ("https://events.ccc.de/feed/" events security interesting)
-        ("https://www.ccc.de/rss/updates.rdf" security interesting)
+        ("https://events.ccc.de/feed/" events security)
+        ("https://www.ccc.de/rss/updates.rdf" security)
 
         ("https://protonmail.com/blog/feed/" security interesting)
         ("https://www.benkuhn.net/rss/" blog)
         ("https://metaredux.com/feed.xml" blog)
         ("https://github.blog/feed/atom" blog)
+        ("http://feeds.feedburner.com/marginalrevolution/feed" blog)
 
                                         ; emacs
         ("https://asylum.madhouse-project.org/blog/atom.xml" emacs blog)
@@ -73,7 +74,7 @@
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCGamtiY212YK76rDI4IhCGg" bikes) ; cyclingabout
         ("http://feeds.feedburner.com/inrng/inrng0" bikes)
         ("http://feeds.feedburner.com/redkiteprayer/krin" bikes)
-        ("http://feeds.feedburner.com/marginalrevolution/feed" blog)
+        ("https://bikepacking.com/feed/" bikes interesting)
 
         ))
 
