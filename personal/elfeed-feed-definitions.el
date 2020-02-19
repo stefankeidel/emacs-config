@@ -50,6 +50,7 @@
         ("https://protonmail.com/blog/feed/" security interesting)
         ("https://www.benkuhn.net/rss/" blog)
         ("https://metaredux.com/feed.xml" blog)
+        ("https://github.blog/feed/atom" blog)
 
                                         ; emacs
         ("https://asylum.madhouse-project.org/blog/atom.xml" emacs blog)
