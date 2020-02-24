@@ -28,13 +28,9 @@
                             ("@work" . ?w)
                             ("@home" . ?h)
                             ("@routine" . ?r)
+                            ("@bike" . ?b)
                             (:endgroup)
-                            ;; stakeholders
-                            ("liz" . ?l)
-                            ("max" . ?m)
-                            ("finance" . ?f)
-                            ("payment" . ?p)
-                            ("chore" . ?c))))
+                            )))
 
 (setq org-capture-templates '(("t" "Todo [inbox]" entry
                                (file+headline "~/org/inbox.org" "Tasks")
@@ -72,10 +68,11 @@
 (add-to-list 'org-modules 'org-habit t)
 
 (setq org-agenda-custom-commands
-      '(("a" "Agenda and Work tasks"
+      '(("a" "Agenda and tasks"
          ((agenda "")
           (tags-todo "@work")
           (tags-todo "@home")
+          (tags "@bike")
           ))
         ))
 
