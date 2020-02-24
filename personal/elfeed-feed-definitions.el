@@ -75,6 +75,7 @@
         ("http://feeds.feedburner.com/inrng/inrng0" bikes)
         ("http://feeds.feedburner.com/redkiteprayer/krin" bikes)
         ("https://bikepacking.com/feed/" bikes interesting)
+        ("https://blog.komoot.com/feed" blog)
 
         ))
 
