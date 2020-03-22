@@ -4,5 +4,5 @@
 # --
 #+begin_src sql :engine postgresql :dbconnection analytics_dwh
 select *
-from analytics.$0
+from $0
 #+end_src
