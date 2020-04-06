@@ -41,9 +41,6 @@
                               ("s" "Standup" entry
                                (file+headline "~/org/idagio.org" "standups")
                                "** Standup %t\n*** yesterday\n-%?\n*** today\n-\n")
-                              ("j" "Journal" entry
-                               (file+headline "~/org/journal.org" "Journal")
-                               "** Entry %t\n-%?\n")
                               ("r" "Reading List" entry
                                (file+headline "~/org/reading.org" "from template")
                                "** QUEUE %?")
