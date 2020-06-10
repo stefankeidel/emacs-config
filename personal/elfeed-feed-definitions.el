@@ -51,7 +51,7 @@
         ("https://www.benkuhn.net/rss/" blog)
         ("https://metaredux.com/feed.xml" blog)
         ("https://github.blog/feed/atom" blog)
-        ("http://feeds.feedburner.com/marginalrevolution/feed" blog)
+        ;("http://feeds.feedburner.com/marginalrevolution/feed" blog)
 
                                         ; emacs
         ("https://asylum.madhouse-project.org/blog/atom.xml" emacs blog)
