@@ -60,7 +60,7 @@
 
 (org-babel-do-load-languages
  'org-babel-load-languages
- '((python . t) (ein . t)))
+ '((python . t) (ein . t) (http . t)))
 
 (add-to-list 'org-modules 'org-habit t)
 
