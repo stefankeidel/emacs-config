@@ -39,6 +39,7 @@
                                         ; useful geek stuff
         ("http://nullprogram.com/feed/" programming)
         ("https://hnrss.org/frontpage" hn maybe) ; spammy custom tag
+        ("http://n-gate.com/index.rss" blog)
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCUHW94eEFW7hkUMVaZz4eDg" physics interesting) ; minutephysics
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCoxcjq-8xIDTYp3uz647V5A" interesting) ; numberphile
         ("https://datawhatnow.com/feed" blog interesting)
