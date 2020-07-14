@@ -5,6 +5,7 @@
 (exec-path-from-shell-copy-env "REDSHIFT_PASSWORD")
 (exec-path-from-shell-copy-env "REDSHIFT_DATABASE")
 (exec-path-from-shell-copy-env "DBT_DEV_SCHEMA")
+(exec-path-from-shell-copy-env "IDAGIO_CONFIG_FILENAME")
 
 (defun idagio-dbt-test ()
   "Run dbt test"
@@ -99,3 +100,16 @@
 
   (let ((default-directory "~/Documents/idagio/idagio-analytics-scripts/dbt/"))
     (async-shell-command "dbt compile --target prod")))
+
+(defun idagio-export-query-results-csv ()
+  "Export results from query as defined by current file"
+  (interactive)
+
+  (make-temp-file "idagio-export-csv")
+  (let ((default-directory "~/Documents/idagio/idagio-analytics-scripts/")
+        (tmpf (make-temp-file "idagio-export-csv")))
+    (shell-command
+     (format "python utils/sql2csv.py --query %s --outfile %s"
+             (shell-quote-argument (buffer-file-name))
+             tmpf))
+    (find-file-other-window tmpf)))
