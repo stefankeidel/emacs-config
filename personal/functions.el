@@ -92,3 +92,10 @@
   (find-name-dired
    "~/Documents/idagio/idagio-analytics-scripts/dbt/target/compiled/idagio_analytics/"
    (concat (file-name-base (buffer-file-name)) ".sql")))
+
+(defun idagio-dbt-compile-production ()
+  "Compile dbt for production"
+  (interactive)
+
+  (let ((default-directory "~/Documents/idagio/idagio-analytics-scripts/dbt/"))
+    (async-shell-command "dbt compile --target prod")))

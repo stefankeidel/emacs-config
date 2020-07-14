@@ -1,6 +1,7 @@
 ;(setq projectile-indexing-method 'alien)
 ;(setq projectile-enable-caching t)
 (setq prelude-theme 'zenburn)
+(setq projectile-mode-line "Projectile")
 
 ;(setq prelude-theme 'base16-zenburn)
 
