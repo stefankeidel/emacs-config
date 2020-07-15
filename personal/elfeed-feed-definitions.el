@@ -79,6 +79,7 @@
         ("http://feeds.feedburner.com/redkiteprayer/krin" bikes)
         ("https://bikepacking.com/feed/" bikes interesting)
         ("https://blog.komoot.com/feed" blog)
+        ("http://cxberlin.com/feed/" blog bikes interesting)
 
                                         ; trying to keep taps on work stuff
         ("https://meltano.com/blog/feed/" data blog)
