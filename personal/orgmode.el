@@ -1,7 +1,6 @@
 (require 'org)
 
 (setq org-agenda-files (list "~/org/stefan.org"
-                             "~/org/idagio.org"
                              "~/org/inbox.org"
                              "~/org/reading.org"
                              "~/org/journal.org"))
@@ -38,9 +37,9 @@
                               ("c" "Calendar" entry
                                (file+headline "~/org/inbox.org" "Calendar")
                                "* %i%? \n   %t")
-                              ("s" "Standup" entry
-                               (file+headline "~/org/idagio.org" "standups")
-                               "** Standup %t\n*** yesterday\n-%?\n*** today\n-\n")
+                              ;; ("s" "Standup" entry
+                              ;;  (file+headline "~/org/idagio.org" "standups")
+                              ;;  "** Standup %t\n*** yesterday\n-%?\n*** today\n-\n")
                               ("r" "Reading List" entry
                                (file+headline "~/org/reading.org" "from template")
                                "** QUEUE %?")
@@ -48,7 +47,7 @@
 
 (setq org-refile-targets '(("~/org/stefan.org" :maxlevel . 2)
                            ("~/org/reading.org" :maxlevel . 1)
-                           ("~/org/idagio.org" :maxlevel . 2)
+                           ;("~/org/idagio.org" :maxlevel . 2)
                            ))
 
 ;; one big archive for everything [file-specific rules still apply and override]
