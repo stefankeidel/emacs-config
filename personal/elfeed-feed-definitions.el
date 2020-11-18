@@ -74,12 +74,12 @@
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCuTaETsuCOkJ0H_GAztWt0Q" bikes) ; gcn
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCGamtiY212YK76rDI4IhCGg" bikes) ; cyclingabout
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCyG8fDB-wIkdjprZD-0TI6Q" bikes) ; bikepacking.com
-        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCp68_FLety0O-n9QU6phsgw" bikes) ; colinfurze
         ("http://feeds.feedburner.com/inrng/inrng0" bikes)
         ("http://feeds.feedburner.com/redkiteprayer/krin" bikes)
         ("https://bikepacking.com/feed/" bikes interesting)
         ("https://blog.komoot.com/feed" blog)
         ("http://cxberlin.com/feed/" blog bikes interesting)
+        ("https://fahrradzukunft.de/feed/" bikes)
 
                                         ; trying to keep taps on work stuff
         ("https://meltano.com/blog/feed/" data blog)
