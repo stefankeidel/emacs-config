@@ -23,4 +23,8 @@
 (set-face-background 'region             "#797979")
 ;(set-face-background 'fringe "#809088")
 
+
+;; start every frame maximized
+(toggle-frame-fullscreen)
+
 (nyan-mode)

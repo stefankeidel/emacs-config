@@ -59,6 +59,7 @@
         ("http://www.masteringemacs.org/feed/" emacs blog)
         ("http://pragmaticemacs.com/feed/" emacs blog)
         ("https://emacsredux.com/atom.xml" emacs blog)
+        ("https://sachachua.com/blog/feed/" emacs blog)
 
                                         ; entertainment
         ("https://www.xkcd.com/rss.xml" comic)
@@ -80,6 +81,7 @@
         ("https://blog.komoot.com/feed" blog)
         ("http://cxberlin.com/feed/" blog bikes interesting)
         ("https://fahrradzukunft.de/feed/" bikes)
+        ("https://www.iamtedking.com/home?format=rss" bikes blog)
 
                                         ; trying to keep taps on work stuff
         ("https://meltano.com/blog/feed/" data blog)

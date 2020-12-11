@@ -82,3 +82,5 @@
 ;; (find-file "~/org/todo.org")
 ;; (org-mode-restart)
 ;; (org-agenda-list)
+
+(stefan-upload-org-agenda)
