@@ -20,7 +20,9 @@
               ("MEETING" :foreground "forest green" :weight bold)
               ;; For my reading list
               ("QUEUE" :foreground "LightSalmon1" :weight bold)
-              ("STARTED" :foreground "PeachPuff2" :weight bold))))
+              ("STARTED" :foreground "PeachPuff2" :weight bold)
+              ("SAVED" :foreground "sky blue" :weight bold)
+              )))
 
 (setq org-tag-alist (quote ((:startgroup)
                             ("@errand" . ?e)
@@ -68,6 +70,11 @@
          ((agenda "" ((org-agenda-span 7)))
           (tags-todo "@work")
           (tags-todo "@home")
+          ))
+        ("r" "Reading list"
+         (
+          (todo "QUEUE")
+          (todo "SAVED")
           ))
         ))
 
