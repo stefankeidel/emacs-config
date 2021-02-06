@@ -52,7 +52,8 @@
         ("https://www.benkuhn.net/rss/" blog)
         ("https://metaredux.com/feed.xml" blog)
         ("https://github.blog/feed/atom" blog)
-        ;("http://feeds.feedburner.com/marginalrevolution/feed" blog)
+        ("http://www.aaronsw.com/2002/feeds/pgessays.rss" blog)
+        ("http://feeds.feedburner.com/marginalrevolution/feed" blog)
 
                                         ; emacs
         ("https://asylum.madhouse-project.org/blog/atom.xml" emacs blog)
@@ -77,7 +78,7 @@
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCyG8fDB-wIkdjprZD-0TI6Q" bikes) ; bikepacking.com
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCNueufSUUGhQJngFPebQmzw" bikes) ; ted king
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCBjf0JkG-PmC359bnUZCjgA" bikes) ; state bicycle co
-        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCHyBWpfAggsFPDc5A7l_eWA" bikes) ; francis cade
+        ;("https://www.youtube.com/feeds/videos.xml?channel_id=UCHyBWpfAggsFPDc5A7l_eWA" bikes) ; francis cade
         ("http://feeds.feedburner.com/inrng/inrng0" bikes)
         ("http://feeds.feedburner.com/redkiteprayer/krin" bikes)
         ("https://bikepacking.com/feed/" bikes interesting)
