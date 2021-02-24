@@ -13,6 +13,8 @@
 
 (global-set-key (kbd "s-e") 'ivy-switch-buffer)
 
+(setq smerge-command-prefix "\C-cv")
+
 ;; (global-set-key (kbd "s-i s") 'idagio-dbt-search-model)
 ;; (global-set-key (kbd "s-i c") 'idagio-dbt-compile-production)
 ;; (global-set-key (kbd "s-i r") 'idagio-dbt-run-model)
