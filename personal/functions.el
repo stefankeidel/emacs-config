@@ -113,3 +113,13 @@
 ;;              (shell-quote-argument (buffer-file-name))
 ;;              tmpf))
 ;;     (find-file-other-window tmpf)))
+
+(defun stefan-schreibt-deutsch ()
+  (interactive)
+  (setq ns-alternate-modifier 'none ns-right-alternate-modifier 'meta)
+  )
+
+(defun stefan-braucht-meta-key ()
+  (interactive)
+  (setq ns-alternate-modifier 'meta ns-right-alternate-modifier 'none)
+  )
