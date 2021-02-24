@@ -3,7 +3,7 @@
 (setq org-agenda-files (list "~/org/stefan.org"
                              "~/org/inbox.org"
                              "~/org/reading.org"
-                             "~/org/journal.org"))
+                             "~/org/umzug.org"))
 
 (setq org-todo-keywords
       (quote ((sequence "TODO(t)" "SOMEDAY(s)" "PROGRESS(p!)" "|" "DONE(d!)")
@@ -27,13 +27,17 @@
 (setq org-tag-alist (quote ((:startgroup)
                             ("@errand" . ?e)
                             ("@work" . ?w)
+                            ("@move" . ?m)
                             ("@home" . ?h)
                             ("@routine" . ?r)
                             ("@bike" . ?b)
                             (:endgroup)
                             )))
 
-(setq org-capture-templates '(("t" "Todo [inbox]" entry
+(setq org-capture-templates '(("m" "Move Task" entry
+                               (file+headline "~/org/umzug.org" "Unsorted")
+                               "** TODO %?")
+                              ("t" "Todo [inbox]" entry
                                (file+headline "~/org/inbox.org" "Tasks")
                                "* TODO %i%?")
                               ("c" "Calendar" entry
@@ -49,7 +53,8 @@
 
 (setq org-refile-targets '(("~/org/stefan.org" :maxlevel . 2)
                            ("~/org/reading.org" :maxlevel . 1)
-                           ;("~/org/idagio.org" :maxlevel . 2)
+                                        ;("~/org/idagio.org" :maxlevel . 2)
+                           ("~/org/umzug.org" :maxlevel . 1)
                            ))
 
 ;; one big archive for everything [file-specific rules still apply and override]
@@ -68,7 +73,8 @@
 (setq org-agenda-custom-commands
       '(("a" "Agenda and tasks"
          ((agenda "" ((org-agenda-span 7)))
-          (tags-todo "@work")
+                                        ;(tags-todo "@work")
+          (tags-todo "@move") ; umzug, temporaer
           (tags-todo "@home")
           ))
         ("r" "Reading list"
@@ -91,3 +97,7 @@
 ;; (org-agenda-list)
 
 (stefan-upload-org-agenda)
+
+(add-to-list 'org-latex-packages-alist '("" "listings" nil))
+(setq org-latex-listings t)
+(setq org-latex-listings-options '(("breaklines" "true")))
