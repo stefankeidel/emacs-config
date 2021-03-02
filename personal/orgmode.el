@@ -41,7 +41,7 @@
                                (file+headline "~/org/inbox.org" "Tasks")
                                "* TODO %i%?")
                               ("c" "Calendar" entry
-                               (file+headline "~/org/inbox.org" "Calendar")
+                               (file+headline "~/org/stefan.org" "calendar")
                                "* %i%? \n   %t")
                               ;; ("s" "Standup" entry
                               ;;  (file+headline "~/org/idagio.org" "standups")
@@ -54,7 +54,7 @@
 (setq org-refile-targets '(("~/org/stefan.org" :maxlevel . 2)
                            ("~/org/reading.org" :maxlevel . 1)
                                         ;("~/org/idagio.org" :maxlevel . 2)
-                           ("~/org/umzug.org" :maxlevel . 1)
+                           ("~/org/umzug.org" :maxlevel . 2)
                            ))
 
 ;; one big archive for everything [file-specific rules still apply and override]
@@ -95,8 +95,6 @@
 ;; (find-file "~/org/todo.org")
 ;; (org-mode-restart)
 ;; (org-agenda-list)
-
-(stefan-upload-org-agenda)
 
 (add-to-list 'org-latex-packages-alist '("" "listings" nil))
 (setq org-latex-listings t)
