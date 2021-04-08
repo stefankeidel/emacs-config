@@ -33,3 +33,4 @@ smex-items
 transient
 request
 personal/secret-functions.el
+org-roam.db

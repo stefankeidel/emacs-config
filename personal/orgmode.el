@@ -3,7 +3,7 @@
 (setq org-agenda-files (list "~/org/stefan.org"
                              "~/org/inbox.org"
                              "~/org/reading.org"
-                             "~/org/umzug.org"))
+                             "~/org/lichtblick.org"))
 
 (setq org-todo-keywords
       (quote ((sequence "TODO(t)" "SOMEDAY(s)" "PROGRESS(p!)" "|" "DONE(d!)")
@@ -34,9 +34,7 @@
                             (:endgroup)
                             )))
 
-(setq org-capture-templates '(("m" "Move Task" entry
-                               (file+headline "~/org/umzug.org" "Unsorted")
-                               "** TODO %?")
+(setq org-capture-templates '(
                               ("t" "Todo [inbox]" entry
                                (file+headline "~/org/inbox.org" "Tasks")
                                "* TODO %i%?")
@@ -53,8 +51,7 @@
 
 (setq org-refile-targets '(("~/org/stefan.org" :maxlevel . 2)
                            ("~/org/reading.org" :maxlevel . 1)
-                                        ;("~/org/idagio.org" :maxlevel . 2)
-                           ("~/org/umzug.org" :maxlevel . 2)
+                           ("~/org/lichtblick.org" :maxlevel . 2)
                            ))
 
 ;; one big archive for everything [file-specific rules still apply and override]
@@ -73,8 +70,8 @@
 (setq org-agenda-custom-commands
       '(("a" "Agenda and tasks"
          ((agenda "" ((org-agenda-span 7)))
-                                        ;(tags-todo "@work")
-          (tags-todo "@move") ; umzug, temporaer
+          (tags-todo "@inbox")
+          (tags-todo "@work")
           (tags-todo "@home")
           ))
         ("r" "Reading list"

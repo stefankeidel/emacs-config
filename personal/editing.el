@@ -33,5 +33,6 @@
 (defun browse-youtube-url (url &optional new-window)
   (start-process "vlc" " *vlc*" "vlc" url))
 
-(setq browse-url-browser-function '(("youtube" . browse-youtube-url)
+(setq browse-url-browser-function '(
+                                    ;("youtube" . browse-youtube-url)
                                     ("." . browse-url-default-browser)))
