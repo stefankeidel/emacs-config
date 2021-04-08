@@ -98,17 +98,23 @@
 (setq org-latex-listings-options '(("breaklines" "true")))
 
 (use-package org-roam
-  :ensure t
-  :hook
-  (after-init . org-roam-mode)
-  :custom
-  (org-roam-directory "~/org-roam")
-  :bind (:map org-roam-mode-map
-              (("s-x l" . org-roam)
-               ("s-x f" . org-roam-find-file)
-               ("s-x g" . org-roam-graph))
-              :map org-mode-map
-              (("s-x i" . org-roam-insert))
-              (("s-x I" . org-roam-insert-immediate))))
+             :ensure t
+             :hook
+             (after-init . org-roam-mode)
+             :custom
+             (org-roam-directory "~/org-roam/")
+             :bind (:map org-roam-mode-map
+                         (("s-b l" . org-roam)
+                          ("s-b f" . org-roam-find-file)
+                          ("s-b g" . org-roam-graph))
+                         :map org-mode-map
+                         (("s-b i" . org-roam-insert))
+                         (("s-b I" . org-roam-insert-immediate))))
 
-(add-hook 'after-init-hook 'org-roam-mode)
+(setq org-roam-capture-templates '(
+                              ("d" "default" plain (function org-roam--capture-get-point)
+                               "%?"
+                               :file-name "%(format-time-string \"%Y-%m-%d--%H-%M-%SZ--${slug}\" (current-time) t)"
+                               :head "#+title: ${title}\n#+created: %u\n#+last_modified: %U\n#+roam_tags:"
+                               :unnarrowed t)
+                              ))
