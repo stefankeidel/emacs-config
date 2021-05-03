@@ -120,3 +120,5 @@
                                :head "#+STARTUP: showeverything\n#+title: ${title}\n#+created: %u\n#+last_modified: %U\n#+roam_tags:"
                                :unnarrowed t)
                               ))
+
+(setq system-time-locale (getenv "LANG"))
