@@ -15,12 +15,12 @@
 
 (setq smerge-command-prefix "\C-cv")
 
-(global-set-key (kbd "s-i s") 'idagio-dbt-search-model)
-(global-set-key (kbd "s-i c") 'idagio-dbt-compile-production)
-(global-set-key (kbd "s-i r") 'idagio-dbt-run-model)
-(global-set-key (kbd "s-i t") 'idagio-dbt-test-model)
-(global-set-key (kbd "s-i f") 'idagio-dbt-find-compiled)
-(global-set-key (kbd "s-i d") 'idagio-dbt-run-models-downstream)
+(global-set-key (kbd "s-i s") 'lichtblick-dbt-search-model)
+(global-set-key (kbd "s-i c") 'lichtblick-dbt-compile-production)
+(global-set-key (kbd "s-i r") 'lichtblick-dbt-run-model)
+(global-set-key (kbd "s-i t") 'lichtblick-dbt-test-model)
+(global-set-key (kbd "s-i f") 'lichtblick-dbt-find-compiled)
+(global-set-key (kbd "s-i d") 'lichtblick-dbt-run-models-downstream)
 (global-set-key (kbd "s-i k") 'kill-buffer-basename)
 
 ; instead of ace-window in default prelude, which I use through C-x o -- this will cycle through windows

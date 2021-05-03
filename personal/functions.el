@@ -7,28 +7,28 @@
 (exec-path-from-shell-copy-env "DBT_DEV_SCHEMA")
 ;; (exec-path-from-shell-copy-env "IDAGIO_CONFIG_FILENAME")
 
-(defun idagio-dbt-test ()
+(defun lichtblick-dbt-test ()
   "Run dbt test"
   (interactive)
 
   (let ((default-directory "~/src/cloud_dwh/dbt/"))
     (async-shell-command "dbt test")))
 
-(defun idagio-dbt-run ()
+(defun lichtblick-dbt-run ()
   "Run dbt"
   (interactive)
 
   (let ((default-directory "~/src/cloud_dwh/dbt/"))
     (async-shell-command "dbt run")))
 
-(defun idagio-dbt-clean-compile ()
+(defun lichtblick-dbt-clean-compile ()
   "Clean+compile dbt"
   (interactive)
 
   (let ((default-directory "~/src/cloud_dwh/dbt/"))
     (async-shell-command "dbt clean && dbt deps && dbt compile")))
 
-(defun idagio-dbt-run-models-interactive (model)
+(defun lichtblick-dbt-run-models-interactive (model)
   "Run dbt with model selection entered by user"
   (interactive "sEnter model selection:")
 
@@ -37,7 +37,7 @@
      (format "dbt run --models %s"
              (shell-quote-argument model)))))
 
-(defun idagio-dbt-run-models-downstream ()
+(defun lichtblick-dbt-run-models-downstream ()
   "Run dbt with everything downstream from the current buffer (including the current one)"
   (interactive)
 
@@ -46,7 +46,7 @@
      (format "dbt run --models %s+"
              (shell-quote-argument (file-name-base (buffer-file-name)))))))
 
-(defun idagio-dbt-run-model ()
+(defun lichtblick-dbt-run-model ()
   "Run dbt with model from the current buffer"
   (interactive)
 
@@ -55,7 +55,7 @@
      (format "dbt run --models %s"
              (shell-quote-argument (file-name-base (buffer-file-name)))))))
 
-(defun idagio-dbt-run-models-lineage ()
+(defun lichtblick-dbt-run-models-lineage ()
   "Run dbt with the entire lineage from the current buffer (including the current one)"
   (interactive)
 
@@ -64,7 +64,7 @@
      (format "dbt run --models +%s+"
              (shell-quote-argument (file-name-base (buffer-file-name)))))))
 
-(defun idagio-dbt-test-model ()
+(defun lichtblick-dbt-test-model ()
   "Run all model tests for model defined by current buffer"
   (interactive)
 
@@ -79,29 +79,29 @@
   (kill-new (file-name-base (buffer-file-name))))
 
 
-(defun idagio-dbt-search-model ()
+(defun lichtblick-dbt-search-model ()
   "Search for model name, as defined by basename of current file"
   (interactive)
 
   (projectile-ag (file-name-base (buffer-file-name))))
 
 
-(defun idagio-dbt-find-compiled ()
+(defun lichtblick-dbt-find-compiled ()
   "Search for model name, as defined by basename of current file"
   (interactive)
 
   (find-name-dired
-   "~/src/cloud_dwh/dbt/target/compiled/idagio_analytics/"
+   "~/src/cloud_dwh/dbt/target/compiled/lichtblick_snowflake_dwh/"
    (concat (file-name-base (buffer-file-name)) ".sql")))
 
-;; (defun idagio-dbt-compile-production ()
+;; (defun lichtblick-dbt-compile-production ()
 ;;   "Compile dbt for production"
 ;;   (interactive)
 
 ;;   (let ((default-directory "~/src/cloud_dwh/dbt/"))
 ;;     (async-shell-command "dbt compile --target prod")))
 
-;; (defun idagio-export-query-results-csv ()
+;; (defun lichtblick-export-query-results-csv ()
 ;;   "Export results from query as defined by current file"
 ;;   (interactive)
 
