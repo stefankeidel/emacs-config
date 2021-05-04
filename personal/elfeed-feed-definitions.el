@@ -53,7 +53,7 @@
         ("https://metaredux.com/feed.xml" blog)
         ("https://github.blog/feed/atom" blog)
         ;("http://www.aaronsw.com/2002/feeds/pgessays.rss" blog)
-        ("http://feeds.feedburner.com/marginalrevolution/feed" blog)
+        ;("http://feeds.feedburner.com/marginalrevolution/feed" blog)
         ("https://paulskallas.substack.com/feed" blog) ; 4HL dude
         ("http://feeds.feedburner.com/martinkl" blog)
 
