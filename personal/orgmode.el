@@ -35,8 +35,11 @@
                             )))
 
 (setq org-capture-templates '(
-                              ("t" "Todo [inbox]" entry
-                               (file+headline "~/org/inbox.org" "Tasks")
+                              ("t" "Todo Lichtblick" entry
+                               (file+headline "~/org/lichtblick.org" "Tasks")
+                               "* TODO %i%?")
+                              ("s" "Todo Stefan" entry
+                               (file+headline "~/org/stefan.org" "tasks")
                                "* TODO %i%?")
                               ("c" "Calendar" entry
                                (file+headline "~/org/stefan.org" "calendar")
@@ -70,7 +73,6 @@
 (setq org-agenda-custom-commands
       '(("a" "Agenda and tasks"
          ((agenda "" ((org-agenda-span 7)))
-          (tags-todo "@inbox")
           (tags-todo "@work")
           (tags-todo "@home")
           ))
@@ -115,6 +117,8 @@
                               ("d" "default" plain (function org-roam--capture-get-point)
                                "%?"
                                :file-name "%(format-time-string \"%Y-%m-%d--%H-%M-%SZ--${slug}\" (current-time) t)"
-                               :head "#+title: ${title}\n#+created: %u\n#+last_modified: %U\n#+roam_tags:"
+                               :head "#+STARTUP: showeverything\n#+title: ${title}\n#+created: %u\n#+last_modified: %U\n#+roam_tags:"
                                :unnarrowed t)
                               ))
+
+(setq system-time-locale (getenv "LANG"))

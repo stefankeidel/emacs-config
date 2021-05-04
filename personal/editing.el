@@ -36,3 +36,9 @@
 (setq browse-url-browser-function '(
                                     ;("youtube" . browse-youtube-url)
                                     ("." . browse-url-default-browser)))
+
+(setq scroll-conservatively 10) ;; move minimum when cursor exits view, instead of recentering
+(setq mouse-wheel-scroll-amount '(1)) ;; mouse scroll moves 1 line at a time, instead of 5 lines
+(setq mouse-wheel-progressive-speed nil) ;; on a long mouse scroll keep scrolling by 1 line
+
+(setq auto-window-vscroll nil)

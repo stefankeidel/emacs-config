@@ -40,13 +40,34 @@
       (lambda (lang body)
         (not (string= lang "sql"))))
 
-;(setq explicit-shell-file-name "/usr/local/bin/zsh")
-(exec-path-from-shell-copy-env "ANALYTICS_REDSHIFT_DWH_DB")
+;(setq explicit-shell-file-name "/usr/bin/zsh")
+;(exec-path-from-shell-copy-env "ANALYTICS_REDSHIFT_DWH_DB")
 
-(defun idagio-run-on-redshift ()
-  "run the file of the current buffer on Redshift"
-  (interactive)
-  (async-shell-command
-   (format "psql %s -v ON_ERROR_STOP=1 --single-transaction --file=%s"
-           (shell-quote-argument (getenv "ANALYTICS_REDSHIFT_DWH_DB"))
-           (shell-quote-argument (buffer-file-name)))))
+;; (defun idagio-run-on-redshift ()
+;;   "run the file of the current buffer on Redshift"
+;;   (interactive)
+;;   (async-shell-command
+;;    (format "psql %s -v ON_ERROR_STOP=1 --single-transaction --file=%s"
+;;            (shell-quote-argument (getenv "ANALYTICS_REDSHIFT_DWH_DB"))
+;;            (shell-quote-argument (buffer-file-name)))))
+
+(require 'ejc-sql)
+(exec-path-from-shell-copy-env "SNOWFLAKE_ACCOUNT")
+(exec-path-from-shell-copy-env "SNOWFLAKE_DATABASE")
+(exec-path-from-shell-copy-env "SNOWFLAKE_USER")
+(exec-path-from-shell-copy-env "SNOWFLAKE_PASSWORD")
+(exec-path-from-shell-copy-env "SNOWFLAKE_WAREHOUSE")
+
+(ejc-create-connection
+ "snowflake"
+ :classpath (concat "/home/stefan/.m2/repository/snowflake/snowflake-jdbc/3.13.3/"
+                    "snowflake-jdbc-3.13.3.jar")
+ :classname "net.snowflake.client.jdbc.SnowflakeDriver"
+ :dbtype "snowflake"
+ :connection-uri (format "jdbc:snowflake://%s.snowflakecomputing.com/?db=%s&user=%s&password=%s&warehouse=%s"
+                         (getenv "SNOWFLAKE_ACCOUNT")
+                         (getenv "SNOWFLAKE_DATABASE")
+                         (getenv "SNOWFLAKE_USER")
+                         (getenv "SNOWFLAKE_PASSWORD")
+                         (getenv "SNOWFLAKE_WAREHOUSE"))
+)
