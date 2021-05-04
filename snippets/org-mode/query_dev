@@ -1,8 +1,9 @@
 # -*- mode: snippet -*-
-# name: query
-# key: q
+# name: query_dev
+# key: qd
 # --
 #+begin_src sql
 select *
-from $0
+from dev_stefan.$0
+limit 20
 #+end_src
