@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: query
 # key: q
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region nil))
 # --
 #+begin_src sql
 select *
