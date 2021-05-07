@@ -11,7 +11,7 @@
 ;(set-face-attribute 'default nil :height 155)
 
 (set-face-attribute 'default nil
-                    :family "Hack Nerd Font" :height 155)
+                    :family "Hack Nerd Font" :height 185)
 
 ;; (require 'doom-modeline)
 ;; (doom-modeline-mode 1)
@@ -25,6 +25,6 @@
 
 
 ;; start every frame maximized
-(toggle-frame-fullscreen)
+;(toggle-frame-fullscreen)
 
 (nyan-mode)

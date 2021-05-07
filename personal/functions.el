@@ -11,28 +11,28 @@
   "Run dbt test"
   (interactive)
 
-  (let ((default-directory "~/src/cloud_dwh/dbt/"))
+  (let ((default-directory "~/Documents/lichtblick/cloud_dwh/dbt/"))
     (async-shell-command "dbt test")))
 
 (defun lichtblick-dbt-run ()
   "Run dbt"
   (interactive)
 
-  (let ((default-directory "~/src/cloud_dwh/dbt/"))
+  (let ((default-directory "~/Documents/lichtblick/cloud_dwh/dbt/"))
     (async-shell-command "dbt run")))
 
 (defun lichtblick-dbt-clean-compile ()
   "Clean+compile dbt"
   (interactive)
 
-  (let ((default-directory "~/src/cloud_dwh/dbt/"))
+  (let ((default-directory "~/Documents/lichtblick/cloud_dwh/dbt/"))
     (async-shell-command "dbt clean && dbt deps && dbt compile")))
 
 (defun lichtblick-dbt-run-models-interactive (model)
   "Run dbt with model selection entered by user"
   (interactive "sEnter model selection:")
 
-  (let ((default-directory "~/src/cloud_dwh/dbt/"))
+  (let ((default-directory "~/Documents/lichtblick/cloud_dwh/dbt/"))
     (async-shell-command
      (format "dbt run --models %s"
              (shell-quote-argument model)))))
@@ -41,7 +41,7 @@
   "Run dbt with everything downstream from the current buffer (including the current one)"
   (interactive)
 
-  (let ((default-directory "~/src/cloud_dwh/dbt/"))
+  (let ((default-directory "~/Documents/lichtblick/cloud_dwh/dbt/"))
     (async-shell-command
      (format "dbt run --models %s+"
              (shell-quote-argument (file-name-base (buffer-file-name)))))))
@@ -50,7 +50,7 @@
   "Run dbt with model from the current buffer"
   (interactive)
 
-  (let ((default-directory "~/src/cloud_dwh/dbt/"))
+  (let ((default-directory "~/Documents/lichtblick/cloud_dwh/dbt/"))
     (async-shell-command
      (format "dbt run --models %s"
              (shell-quote-argument (file-name-base (buffer-file-name)))))))
@@ -59,7 +59,7 @@
   "Run dbt with the entire lineage from the current buffer (including the current one)"
   (interactive)
 
-  (let ((default-directory "~/src/cloud_dwh/dbt/"))
+  (let ((default-directory "~/Documents/lichtblick/cloud_dwh/dbt/"))
     (async-shell-command
      (format "dbt run --models +%s+"
              (shell-quote-argument (file-name-base (buffer-file-name)))))))
@@ -68,7 +68,7 @@
   "Run all model tests for model defined by current buffer"
   (interactive)
 
-  (let ((default-directory "~/src/cloud_dwh/dbt/"))
+  (let ((default-directory "~/Documents/lichtblick/cloud_dwh/dbt/"))
     (async-shell-command
      (format "dbt test --models %s"
              (shell-quote-argument (file-name-base (buffer-file-name)))))))
@@ -91,14 +91,14 @@
   (interactive)
 
   (find-name-dired
-   "~/src/cloud_dwh/dbt/target/compiled/lichtblick_snowflake_dwh/"
+   "~/Documents/lichtblick/cloud_dwh/dbt/target/compiled/lichtblick_snowflake_dwh/"
    (concat (file-name-base (buffer-file-name)) ".sql")))
 
 ;; (defun lichtblick-dbt-compile-production ()
 ;;   "Compile dbt for production"
 ;;   (interactive)
 
-;;   (let ((default-directory "~/src/cloud_dwh/dbt/"))
+;;   (let ((default-directory "~/Documents/lichtblick/cloud_dwh/dbt/"))
 ;;     (async-shell-command "dbt compile --target prod")))
 
 ;; (defun lichtblick-export-query-results-csv ()

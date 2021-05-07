@@ -66,7 +66,7 @@
 
 (org-babel-do-load-languages
  'org-babel-load-languages
- '((python . t) (ein . t) (http . t)))
+ '((sql . t) (python . t) (ein . t) (http . t)))
 
 (add-to-list 'org-modules 'org-habit t)
 
@@ -89,6 +89,11 @@
 ;;           (lambda ()
 ;;             (visual-line-mode t))
 ;;           t)
+
+(add-hook 'org-mode-hook
+          (lambda ()
+            (electric-indent-local-mode -1))
+          t)
 
 ;start emacs with todo list open
 ;; (find-file "~/org/todo.org")
@@ -122,3 +127,7 @@
                               ))
 
 (setq system-time-locale (getenv "LANG"))
+
+;(setq org-plantuml-jar-path (expand-file-name "/opt/plantuml.jar"))
+(setq plantuml-jar-path "/opt/plantuml.jar")
+(setq plantuml-default-exec-mode 'jar)
