@@ -26,3 +26,15 @@
 
 ;; Corrects (and improves) org-mode's native fontification.
 ;(doom-themes-org-config)
+
+                                        ; todo: install these automatically
+;; german-holidays
+;; elfeed
+;; nyan-mode
+;; visual-regexp-steroids
+;; smex
+;; ejc-sql
+;; ob-http
+;; ein
+;; use-package
+;; plantuml-mode

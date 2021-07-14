@@ -60,8 +60,8 @@
 
 (ejc-create-connection
  "snowflake"
- :classpath (concat "/home/stefan/.m2/repository/snowflake/snowflake-jdbc/3.13.3/"
-                    "snowflake-jdbc-3.13.3.jar")
+ :classpath (concat "/home/stefan/.m2/repository/snowflake/snowflake-jdbc/3.13.4/"
+                    "snowflake-jdbc-3.13.4.jar")
  :classname "net.snowflake.client.jdbc.SnowflakeDriver"
  :dbtype "snowflake"
  :connection-uri (format "jdbc:snowflake://%s.snowflakecomputing.com/?db=%s&user=%s&password=%s&warehouse=%s"

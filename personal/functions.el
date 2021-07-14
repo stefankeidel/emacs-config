@@ -91,7 +91,7 @@
   (interactive)
 
   (find-name-dired
-   "~/Documents/lichtblick/cloud_dwh/dbt/target/compiled/lichtblick_snowflake_dwh/"
+   "~/Documents/lichtblick/cloud_dwh/dbt/target/compiled/lb_dwh/"
    (concat (file-name-base (buffer-file-name)) ".sql")))
 
 ;; (defun lichtblick-dbt-compile-production ()
@@ -122,4 +122,10 @@
 (defun stefan-braucht-meta-key ()
   (interactive)
   (setq ns-alternate-modifier 'meta ns-right-alternate-modifier 'none)
+  )
+
+(defun snowflake-select-field-list (number)
+  (interactive "nHow many fields:")
+  (insert "t.$")
+  (insert (mapconcat 'number-to-string (number-sequence 1 number) ",t.$"))
   )
