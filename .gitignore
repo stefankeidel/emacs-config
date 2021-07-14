@@ -34,3 +34,7 @@ transient
 request
 personal/secret-functions.el
 org-roam.db
+transient/
+var/
+.cache/
+.lsp-session*
