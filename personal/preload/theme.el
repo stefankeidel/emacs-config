@@ -2,6 +2,7 @@
 ;(setq projectile-enable-caching t)
 (setq prelude-theme 'zenburn)
 (setq projectile-mode-line "Projectile")
+(setq prelude-minimalistic-ui t)
 
 ;(setq prelude-theme 'base16-zenburn)
 
