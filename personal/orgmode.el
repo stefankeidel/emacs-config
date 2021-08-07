@@ -131,3 +131,11 @@
 ;(setq org-plantuml-jar-path (expand-file-name "/opt/plantuml.jar"))
 (setq plantuml-jar-path "/opt/plantuml.jar")
 (setq plantuml-default-exec-mode 'jar)
+
+
+;; Open agenda vertically by default
+(defadvice org-agenda (around split-vertically activate)
+  (let (
+        (split-width-threshold 40)    ; or whatever width makes sense for you
+        (split-height-threshold nil)) ; but never horizontally
+    ad-do-it))
