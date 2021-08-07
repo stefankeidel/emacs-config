@@ -42,3 +42,5 @@
 (setq mouse-wheel-progressive-speed nil) ;; on a long mouse scroll keep scrolling by 1 line
 
 (setq auto-window-vscroll nil)
+
+(setq projectile-completion-system 'ivy)
