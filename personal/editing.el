@@ -34,7 +34,7 @@
   (start-process "vlc" " *vlc*" "vlc" url))
 
 (setq browse-url-browser-function '(
-                                    ;("youtube" . browse-youtube-url)
+                                    ("youtube" . browse-youtube-url)
                                     ("." . browse-url-default-browser)))
 
 (setq scroll-conservatively 10) ;; move minimum when cursor exits view, instead of recentering
@@ -42,3 +42,6 @@
 (setq mouse-wheel-progressive-speed nil) ;; on a long mouse scroll keep scrolling by 1 line
 
 (setq auto-window-vscroll nil)
+
+(setq projectile-completion-system 'ivy)
+(setq split-width-threshold 1 )
