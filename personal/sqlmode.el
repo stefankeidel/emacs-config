@@ -57,6 +57,7 @@
 (exec-path-from-shell-copy-env "SNOWFLAKE_USER")
 (exec-path-from-shell-copy-env "SNOWFLAKE_PASSWORD")
 (exec-path-from-shell-copy-env "SNOWFLAKE_WAREHOUSE")
+(exec-path-from-shell-copy-env "SNOWFLAKE_ROLE")
 
 (ejc-create-connection
  "snowflake"
