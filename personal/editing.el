@@ -44,4 +44,4 @@
 (setq auto-window-vscroll nil)
 
 (setq projectile-completion-system 'ivy)
-(setq split-width-threshold 1 )
+;(setq split-width-threshold 1 )
