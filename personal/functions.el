@@ -1,11 +1,6 @@
 (exec-path-from-shell-copy-env "DBT_PROFILES_DIR")
-;; (exec-path-from-shell-copy-env "REDSHIFT_HOST")
-;; (exec-path-from-shell-copy-env "REDSHIFT_PORT")
-;; (exec-path-from-shell-copy-env "REDSHIFT_USER")
-;; (exec-path-from-shell-copy-env "REDSHIFT_PASSWORD")
-;; (exec-path-from-shell-copy-env "REDSHIFT_DATABASE")
 (exec-path-from-shell-copy-env "DBT_DEV_SCHEMA")
-;; (exec-path-from-shell-copy-env "IDAGIO_CONFIG_FILENAME")
+(exec-path-from-shell-copy-env "LICHTBLICK_RAW_DATABASE_NAME")
 
 (defun lichtblick-dbt-test ()
   "Run dbt test"

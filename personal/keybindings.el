@@ -25,3 +25,6 @@
 
 ; instead of ace-window in default prelude, which I use through C-x o -- this will cycle through windows
 (global-set-key (kbd "s-w") 'next-multiframe-window)
+
+; use kill ring browser by default
+(global-set-key (kbd "M-y") 'browse-kill-ring)
