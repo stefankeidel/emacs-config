@@ -11,7 +11,7 @@
 ;(set-face-attribute 'default nil :height 155)
 
 (set-face-attribute 'default nil
-                    :family "Hack Nerd Font" :height 185)
+                    :family "Hack Nerd Font" :height 200)
 
 ;; (require 'doom-modeline)
 ;; (doom-modeline-mode 1)
