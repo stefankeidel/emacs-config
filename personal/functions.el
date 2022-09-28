@@ -127,5 +127,4 @@
 
 (defun connect-new-srv ()
   (interactive)
-  (find-file "/ssh:stefan@nextcloud.keidel.me#4321:~")
-  )
+  (find-file "/ssh:stefan@nextcloud.keidel.me#4321:/home/stefan"))
