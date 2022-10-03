@@ -124,3 +124,8 @@
   (insert "t.$")
   (insert (mapconcat 'number-to-string (number-sequence 1 number) ",t.$"))
   )
+
+(defun connect-new-srv ()
+  (interactive)
+  (find-file "/ssh:stefan@nextcloud.keidel.me#4321:~")
+  )

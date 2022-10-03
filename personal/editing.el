@@ -34,7 +34,7 @@
   (start-process "vlc" " *vlc*" "vlc" url))
 
 (setq browse-url-browser-function '(
-                                    ("youtube" . browse-youtube-url)
+                                    ;("youtube" . browse-youtube-url)
                                     ("." . browse-url-default-browser)))
 
 (setq scroll-conservatively 10) ;; move minimum when cursor exits view, instead of recentering
