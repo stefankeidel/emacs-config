@@ -62,7 +62,7 @@
         ("http://www.masteringemacs.org/feed/" emacs blog)
         ("http://pragmaticemacs.com/feed/" emacs blog)
         ("https://emacsredux.com/atom.xml" emacs blog)
-        ("https://sachachua.com/blog/feed/" emacs blog)
+        ;("https://sachachua.com/blog/feed/" emacs blog)
 
                                         ; entertainment
         ("https://www.xkcd.com/rss.xml" comic)
@@ -71,7 +71,7 @@
         ("https://www.awaywithmaja.com/feed" travel blog)
 
                                         ;environment
-        ("https://www.gatesnotes.com/RSS" environment blog)
+        ;("https://www.gatesnotes.com/RSS" environment blog)
 
                                         ; bike stuff
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UC710HJmp-YgNbE5BnFBRoeg" bikes) ; gcn tech
