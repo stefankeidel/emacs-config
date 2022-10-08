@@ -33,9 +33,11 @@
 (defun browse-youtube-url (url &optional new-window)
   (start-process "vlc" " *vlc*" "vlc" url))
 
-(setq browse-url-browser-function '(
-                                    ;("youtube" . browse-youtube-url)
-                                    ("." . browse-url-default-browser)))
+;; (setq browse-url-browser-function '(
+;;                                     ;("youtube" . browse-youtube-url)
+;;                                     ("." . browse-url-default-browser)))
+
+; todo: use browse-url-handlers instead
 
 (setq scroll-conservatively 10) ;; move minimum when cursor exits view, instead of recentering
 (setq mouse-wheel-scroll-amount '(1)) ;; mouse scroll moves 1 line at a time, instead of 5 lines
