@@ -54,7 +54,7 @@
         ("https://github.blog/feed/atom" blog)
         ;("http://www.aaronsw.com/2002/feeds/pgessays.rss" blog)
         ;("http://feeds.feedburner.com/marginalrevolution/feed" blog)
-        ("https://paulskallas.substack.com/feed" blog) ; 4HL dude
+        ;("https://paulskallas.substack.com/feed" blog) ; 4HL dude
         ("http://feeds.feedburner.com/martinkl" blog)
 
                                         ; emacs
@@ -80,7 +80,8 @@
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCyG8fDB-wIkdjprZD-0TI6Q" bikes) ; bikepacking.com
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCNueufSUUGhQJngFPebQmzw" bikes) ; ted king
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCBjf0JkG-PmC359bnUZCjgA" bikes) ; state bicycle co
-        ;("https://www.youtube.com/feeds/videos.xml?channel_id=UCHyBWpfAggsFPDc5A7l_eWA" bikes) ; francis cade
+        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCHyBWpfAggsFPDc5A7l_eWA" bikes) ; francis cade
+        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCYuKCZ35_lrDmFj2gNuAwZw" bikes) ; trace velo
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCiDJtJKMICpb9B1qf7qjEOA") ; adam savage's tested
 
         ("http://feeds.feedburner.com/inrng/inrng0" bikes)
