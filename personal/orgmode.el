@@ -72,7 +72,7 @@
 
 (setq org-agenda-custom-commands
       '(("a" "Agenda and tasks"
-         ((agenda "" ((org-agenda-span 7)))
+         ((agenda "" ((org-agenda-span 1)))
           (tags-todo "@work")
           (tags-todo "@home")
           ))

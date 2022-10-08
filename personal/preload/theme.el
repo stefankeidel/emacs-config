@@ -39,3 +39,5 @@
 ;; ein
 ;; use-package
 ;; plantuml-mode
+(use-package use-package-chords
+  :ensure t)
