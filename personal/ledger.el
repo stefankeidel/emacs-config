@@ -11,22 +11,22 @@
         )))
 
 
-;;; Basic configuration
-(require 'hledger-mode)
+;; ;;; Basic configuration
+;; (require 'hledger-mode)
 
-;; To open files with .journal extension in hledger-mode
-(add-to-list 'auto-mode-alist '("\\.ledger\\'" . hledger-mode))
+;; ;; To open files with .journal extension in hledger-mode
+;; (add-to-list 'auto-mode-alist '("\\.ledger\\'" . hledger-mode))
 
-;; Provide the path to you journal file.
-;; The default location is too opinionated.
-(setq hledger-jfile "~/Cloud/ledger/stefan.ledger")
-
-
-;;; Auto-completion for account names
-;; For company-mode users,
-(add-to-list 'company-backends 'hledger-company)
+;; ;; Provide the path to you journal file.
+;; ;; The default location is too opinionated.
+;; (setq hledger-jfile "~/Cloud/ledger/stefan.ledger")
 
 
-                                        ; for reporting
+;; ;;; Auto-completion for account names
+;; ;; For company-mode users,
+;; (add-to-list 'company-backends 'hledger-company)
 
-(setq hledger-ratios-liquid-asset-accounts "assets:gls")
+
+;;                                         ; for reporting
+
+;; (setq hledger-ratios-liquid-asset-accounts "assets:gls")

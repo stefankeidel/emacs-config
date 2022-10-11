@@ -56,6 +56,7 @@
         ;("http://feeds.feedburner.com/marginalrevolution/feed" blog)
         ;("https://paulskallas.substack.com/feed" blog) ; 4HL dude
         ("http://feeds.feedburner.com/martinkl" blog)
+        ("https://www.lesswrong.com/feed.xml?view=curated-rss" blog)
 
                                         ; emacs
         ("https://asylum.madhouse-project.org/blog/atom.xml" emacs blog)
