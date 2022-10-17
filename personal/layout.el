@@ -28,3 +28,12 @@
 ;(toggle-frame-fullscreen)
 
 (nyan-mode)
+
+(use-package perspective
+  :ensure t
+  :bind
+  ("s-e" . persp-ivy-switch-buffer)         ; or use a nicer switcher, see below
+  :custom
+  (persp-mode-prefix-key (kbd "s-x"))  ; pick your own prefix key here
+  :init
+  (persp-mode))
