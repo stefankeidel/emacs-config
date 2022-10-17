@@ -63,7 +63,8 @@
         ("http://www.masteringemacs.org/feed/" emacs blog)
         ("http://pragmaticemacs.com/feed/" emacs blog)
         ("https://emacsredux.com/atom.xml" emacs blog)
-        ;("https://sachachua.com/blog/feed/" emacs blog)
+                                        ;("https://sachachua.com/blog/feed/" emacs blog)
+        ("https://feedpress.me/TheTechnium" blog)
 
                                         ; entertainment
         ("https://www.xkcd.com/rss.xml" comic)
