@@ -71,4 +71,12 @@
                          (getenv "SNOWFLAKE_USER")
                          (getenv "SNOWFLAKE_PASSWORD")
                          (getenv "SNOWFLAKE_WAREHOUSE"))
-)
+ )
+
+(setq ejc-result-table-impl 'orgtbl-mode)
+(setq whitespace-global-modes '(not org-mode))
+(setq prelude-whitespace nil)
+(setq nrepl-sync-request-timeout 60
+      ejc-connection-validate-timeout 60)
+
+(setq ejc-set-fetch-size nil)
