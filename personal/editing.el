@@ -47,3 +47,5 @@
 
 (setq projectile-completion-system 'ivy)
 ;(setq split-width-threshold 1 )
+
+(windmove-default-keybindings 'super)
