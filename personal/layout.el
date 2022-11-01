@@ -16,6 +16,9 @@
 (set-face-attribute 'variable-pitch nil
                     :family "Hack Nerd Font")
 
+(set-face-foreground 'secondary-selection "skyblue")
+(set-face-background 'secondary-selection "darkblue")
+
 ;; (require 'doom-modeline)
 ;; (doom-modeline-mode 1)
 
