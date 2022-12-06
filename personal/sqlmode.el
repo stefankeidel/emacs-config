@@ -73,10 +73,17 @@
                          (getenv "SNOWFLAKE_WAREHOUSE"))
  )
 
-(setq ejc-result-table-impl 'orgtbl-mode)
 (setq whitespace-global-modes '(not org-mode))
 (setq prelude-whitespace nil)
 (setq nrepl-sync-request-timeout 60
       ejc-connection-validate-timeout 60)
 
-(setq ejc-set-fetch-size nil)
+
+(setq ejc-result-table-impl 'orgtbl-mode)
+(add-hook 'ejc-sql-connected-hook
+          (lambda ()
+            (ejc-set-fetch-size 200)
+            (ejc-set-max-rows 200)
+            (ejc-set-show-too-many-rows-message t)
+            (ejc-set-column-width-limit 150)
+            ))

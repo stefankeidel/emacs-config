@@ -37,11 +37,11 @@
 (require 'prelude-programming)
 
 ;; Code navigation, documentation lookup and completion for Python
-(prelude-require-package 'anaconda-mode)
+;(prelude-require-package 'anaconda-mode)
 
-(when (boundp 'company-backends)
-  (prelude-require-package 'company-anaconda)
-  (add-to-list 'company-backends 'company-anaconda))
+;; (when (boundp 'company-backends)
+;;   (prelude-require-package 'company-anaconda)
+;;   (add-to-list 'company-backends 'company-anaconda))
 
 (defcustom prelude-python-mode-set-encoding-automatically nil
   "Non-nil values enable auto insertion of '# coding: utf-8' on python buffers."
@@ -98,9 +98,9 @@
 
 (defun prelude-python-mode-defaults ()
   "Defaults for Python programming."
-  (subword-mode +1)
-  (anaconda-mode +1)
-  (eldoc-mode +1)
+  ;; (subword-mode +1)
+  ;; (anaconda-mode +1)
+  ;; (eldoc-mode +1)
   (setq-local electric-layout-rules
               '((?: . (lambda ()
                         (and (zerop (first (syntax-ppss)))

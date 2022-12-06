@@ -129,8 +129,8 @@
 (setq system-time-locale (getenv "LANG"))
 
 ;(setq org-plantuml-jar-path (expand-file-name "/opt/plantuml.jar"))
-(setq plantuml-jar-path "/opt/plantuml.jar")
-(setq plantuml-default-exec-mode 'jar)
+;(setq plantuml-jar-path "/opt/plantuml.jar")
+;(setq plantuml-default-exec-mode 'jar)
 
 
 ;; Open agenda vertically by default
