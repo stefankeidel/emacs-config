@@ -85,6 +85,10 @@
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCHyBWpfAggsFPDc5A7l_eWA" bikes) ; francis cade
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCYuKCZ35_lrDmFj2gNuAwZw" bikes) ; trace velo
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UCiDJtJKMICpb9B1qf7qjEOA") ; adam savage's tested
+        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCm9K6rby98W8JigLoZOh6FQ"); lockpicking lawyer
+        ("https://www.youtube.com/feeds/videos.xml?user=twoodfrd")
+        ("https://www.youtube.com/feeds/videos.xml?channel_id=UChPQTOpYjCiO1hGbN5CGmpQ"); jack ultra
+        ("https://www.youtube.com/feeds/videos.xml?channel_id=UC7GV-3hrA9kDKrren0QMKMg"); cinema tyler
 
         ("http://feeds.feedburner.com/inrng/inrng0" bikes)
         ("http://feeds.feedburner.com/redkiteprayer/krin" bikes)
