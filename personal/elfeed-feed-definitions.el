@@ -89,6 +89,7 @@
         ("https://www.youtube.com/feeds/videos.xml?user=twoodfrd")
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UChPQTOpYjCiO1hGbN5CGmpQ"); jack ultra
         ("https://www.youtube.com/feeds/videos.xml?channel_id=UC7GV-3hrA9kDKrren0QMKMg"); cinema tyler
+        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCMb0O2CdPBNi-QqPk5T3gsQ"); james coffee dude
 
         ("http://feeds.feedburner.com/inrng/inrng0" bikes)
         ("http://feeds.feedburner.com/redkiteprayer/krin" bikes)
