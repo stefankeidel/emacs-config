@@ -33,8 +33,6 @@
 ;; start every frame maximized
 ;(toggle-frame-fullscreen)
 
-(nyan-mode)
-
 (use-package perspective
   :ensure t
   :bind
@@ -43,3 +41,5 @@
   (persp-mode-prefix-key (kbd "s-x"))  ; pick your own prefix key here
   :init
   (persp-mode))
+
+(use-package fancy-battery :ensure t)

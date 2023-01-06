@@ -6,6 +6,11 @@
 (setq projectile-mode-line "Projectile")
 (setq prelude-minimalistic-ui t)
 
+(require 'spaceline-config)
+(spaceline-emacs-theme)
+(spaceline-toggle-minor-modes-off)
+(spaceline-toggle-battery-on)
+
 ;(setq prelude-theme 'base16-zenburn)
 
 ;(require 'doom-themes)
