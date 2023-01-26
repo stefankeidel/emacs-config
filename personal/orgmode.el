@@ -71,10 +71,16 @@
 (add-to-list 'org-modules 'org-habit t)
 
 (setq org-agenda-custom-commands
-      '(("a" "Agenda and tasks"
-         ((agenda "" ((org-agenda-span 7)))
-          (tags-todo "@work")
-          (tags-todo "@home")
+      '(
+        ;; ("a" "Agenda and tasks"
+        ;;  ((agenda "" ((org-agenda-span 7)))
+        ;;   (tags-todo "@work")
+        ;;   (tags-todo "@home")
+        ;;   ))
+        ("a" "Reading list"
+         (
+          (todo "QUEUE")
+          (todo "SAVED")
           ))
         ("r" "Reading list"
          (
