@@ -35,18 +35,18 @@
                             )))
 
 (setq org-capture-templates '(
-                              ("t" "Todo Lichtblick" entry
-                               (file+headline "~/org/lichtblick.org" "Tasks")
-                               "* TODO %i%?")
-                              ("s" "Todo Stefan" entry
-                               (file+headline "~/org/stefan.org" "tasks")
-                               "* TODO %i%?")
-                              ("c" "Calendar" entry
-                               (file+headline "~/org/stefan.org" "calendar")
-                               "* %i%? \n   %t")
-                              ;; ("s" "Standup" entry
-                              ;;  (file+headline "~/org/idagio.org" "standups")
-                              ;;  "** Standup %t\n*** yesterday\n-%?\n*** today\n-\n")
+                              ;; ("t" "Todo Lichtblick" entry
+                              ;;  (file+headline "~/org/lichtblick.org" "Tasks")
+                              ;;  "* TODO %i%?")
+                              ;; ("s" "Todo Stefan" entry
+                              ;;  (file+headline "~/org/stefan.org" "tasks")
+                              ;;  "* TODO %i%?")
+                              ;; ("c" "Calendar" entry
+                              ;;  (file+headline "~/org/stefan.org" "calendar")
+                              ;;  "* %i%? \n   %t")
+                              ;; ;; ("s" "Standup" entry
+                              ;; ;;  (file+headline "~/org/idagio.org" "standups")
+                              ;; ;;  "** Standup %t\n*** yesterday\n-%?\n*** today\n-\n")
                               ("r" "Reading List" entry
                                (file+headline "~/org/reading.org" "from template")
                                "** QUEUE %?")

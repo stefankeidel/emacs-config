@@ -102,6 +102,7 @@
 
                                         ; trying to keep taps on work stuff
         ("https://meltano.com/blog/feed/" data blog)
+        ("https://roundup.getdbt.com/feed" data blog)
         ))
 
 (setq-default elfeed-search-filter "@2-weeks-ago +unread ")
