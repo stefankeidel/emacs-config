@@ -43,3 +43,5 @@
   (persp-mode))
 
 (use-package fancy-battery :ensure t)
+
+(use-package ztree :ensure t)
