@@ -1,7 +1,6 @@
 (require 'org)
 
 (setq org-agenda-files (list "~/org/stefan.org"
-                             "~/org/inbox.org"
                              "~/org/reading.org"
                              "~/org/lichtblick.org"))
 
@@ -35,12 +34,12 @@
                             )))
 
 (setq org-capture-templates '(
-                              ;; ("t" "Todo Lichtblick" entry
-                              ;;  (file+headline "~/org/lichtblick.org" "Tasks")
-                              ;;  "* TODO %i%?")
-                              ;; ("s" "Todo Stefan" entry
-                              ;;  (file+headline "~/org/stefan.org" "tasks")
-                              ;;  "* TODO %i%?")
+                              ("t" "Todo Lichtblick" entry
+                               (file+headline "~/org/lichtblick.org" "Tasks")
+                               "* TODO %i%?")
+                              ("s" "Todo Stefan" entry
+                               (file+headline "~/org/stefan.org" "tasks")
+                               "* TODO %i%?")
                               ;; ("c" "Calendar" entry
                               ;;  (file+headline "~/org/stefan.org" "calendar")
                               ;;  "* %i%? \n   %t")
@@ -72,12 +71,12 @@
 
 (setq org-agenda-custom-commands
       '(
-        ;; ("a" "Agenda and tasks"
-        ;;  ((agenda "" ((org-agenda-span 7)))
-        ;;   (tags-todo "@work")
-        ;;   (tags-todo "@home")
-        ;;   ))
-        ("a" "Reading list"
+        ("a" "Agenda and tasks"
+         ((agenda "" ((org-agenda-span 7)))
+          (tags-todo "@work")
+          (tags-todo "@home")
+          ))
+        ("r" "Reading list"
          (
           (todo "QUEUE")
           (todo "SAVED")
