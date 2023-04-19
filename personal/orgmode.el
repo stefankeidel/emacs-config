@@ -65,7 +65,7 @@
 
 (org-babel-do-load-languages
  'org-babel-load-languages
- '((sql . t) (python . t) (ein . t) (http . t)))
+ '((sql . t) (python . t) (ein . t) (http . t) (shell . t)))
 
 (add-to-list 'org-modules 'org-habit t)
 
