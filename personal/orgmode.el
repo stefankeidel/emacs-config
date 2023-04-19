@@ -110,26 +110,27 @@
 (setq org-latex-listings-options '(("breaklines" "true")))
 
 (use-package org-roam
-             :ensure t
-             :hook
-             (after-init . org-roam-mode)
-             :custom
-             (org-roam-directory "~/org-roam/")
-             :bind (:map org-roam-mode-map
-                         (("s-b l" . org-roam)
-                          ("s-b f" . org-roam-find-file)
-                          ("s-b g" . org-roam-graph))
-                         :map org-mode-map
-                         (("s-b i" . org-roam-insert))
-                         (("s-b I" . org-roam-insert-immediate))))
-
-(setq org-roam-capture-templates '(
-                              ("d" "default" plain (function org-roam--capture-get-point)
-                               "%?"
-                               :file-name "%(format-time-string \"%Y-%m-%d--%H-%M-%SZ--${slug}\" (current-time) t)"
-                               :head "#+STARTUP: showeverything\n#+title: ${title}\n#+created: %u\n#+last_modified: %U\n#+roam_tags:"
-                               :unnarrowed t)
-                              ))
+  :ensure t
+  :custom
+  (org-roam-directory (file-truename "~/org-roam/"))
+  (org-roam-capture-templates
+   '(("d" "default" plain
+      "%?"
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+STARTUP: showeverything\n#+title: ${title}\n#+created: %u\n#+last_modified: %U\n#+roam_tags:")
+      :unnarrowed t)))
+  :bind (("s-b l" . org-roam-buffer-toggle)
+         ("s-b f" . org-roam-node-find)
+         ("s-b g" . org-roam-graph)
+         ("s-b i" . org-roam-node-insert)
+         ("s-b c" . org-roam-capture)
+         ;; ;; Dailies
+         ;("s-b j" . org-roam-dailies-capture-today)
+         )
+         
+  :config
+  (setq org-roam-node-display-template (concat "${title:*} " (propertize "${tags:60}" 'face 'org-tag)))
+  (setq org-roam-completion-everywhere t)
+  (org-roam-db-autosync-mode))
 
 (setq system-time-locale (getenv "LANG"))
 
