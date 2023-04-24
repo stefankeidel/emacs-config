@@ -145,3 +145,34 @@
         (split-width-threshold 40)    ; or whatever width makes sense for you
         (split-height-threshold nil)) ; but never horizontally
     ad-do-it))
+
+
+;; (use-package ob-tmux
+;;   ;; Install package automatically (optional)
+;;   :ensure t
+;;   :custom
+;;   (org-babel-default-header-args:tmux
+;;    '((:results . "silent")	;
+;;      (:session . "default")	; The default tmux session to send code to
+;;      (:socket  . nil)))		; The default tmux socket to communicate with
+;;   ;; The tmux sessions are prefixed with the following string.
+;;   ;; You can customize this if you like.
+;;   (org-babel-tmux-session-prefix "ob-")
+;;   ;; The terminal that will be used.
+;;   ;; You can also customize the options passed to the terminal.
+;;   ;; The default terminal is "gnome-terminal" with options "--".
+;;   (org-babel-tmux-terminal "vterm")
+;;   (org-babel-tmux-terminal-opts '("-T" "ob-tmux" "-e"))
+;;   ;; Finally, if your tmux is not in your $PATH for whatever reason, you
+;;   ;; may set the path to the tmux binary as follows:
+;;   (org-babel-tmux-location "/opt/homebrew/bin/tmux"))
+
+(defadvice org-babel-execute:sh (around sacha activate)
+  (if (assoc-default :term (ad-get-arg 1) nil)
+      (let ((buffer (make-term "babel" "/bin/zsh")))
+        (with-current-buffer buffer
+          (insert (org-babel-expand-body:generic
+                   body params (org-babel-variable-assignments:sh params)))
+          (term-send-input))
+        (pop-to-buffer buffer))
+    ad-do-it))
