@@ -114,11 +114,20 @@
   :custom
   (org-roam-directory (file-truename "~/org-roam/"))
   (org-roam-capture-templates
-   '(("d" "default" plain
+   '(
+   ("d" "default" plain
       "%?"
-      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+STARTUP: showeverything\n#+title: ${title}\n#+created: %u\n#+last_modified: %U\n#+roam_tags:")
-      :unnarrowed t)))
-  :bind (("s-b l" . org-roam-buffer-toggle)
+      :if-new (file+head "%<%Y-%m-%d--%H-%M-%S>-${slug}.org" "#+title: ${title}\n#+filetags:")
+      :unnarrowed t)
+   ("t" "ticket" plain
+    "* https://lichtblick.atlassian.net/browse/${title}\n\n%?\n"
+    :if-new (file+head "lichtblick-tickets/%<%Y-%m-%d--%H-%M-%S>-${slug}.org"
+                       "#+title: ${title}\n#+FILETAGS: ticket:lichtblick"
+                       )
+    :unnarrowed t)
+    )
+   )
+  :bind (;("s-b l" . org-roam-buffer-toggle)
          ("s-b f" . org-roam-node-find)
          ("s-b g" . org-roam-graph)
          ("s-b i" . org-roam-node-insert)
