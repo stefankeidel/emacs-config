@@ -24,11 +24,9 @@
 
 ;; (setq doom-modeline-buffer-file-name-style 'file-name)
 
-(set-face-background 'mode-line          "#4466aa")
-(set-face-background 'mode-line-inactive "#99aaff")
-(set-face-background 'region             "#797979")
-;(set-face-background 'fringe "#809088")
-
+;; (set-face-background 'mode-line          "#4466aa")
+;; (set-face-background 'mode-line-inactive "#99aaff")
+;; (set-face-background 'region             "#797979")
 
 ;; start every frame maximized
 ;(toggle-frame-fullscreen)
@@ -67,3 +65,6 @@
 (use-package all-the-icons
   :ensure t
   :if (display-graphic-p))
+
+(set-face-background 'fringe "#002b36")
+
