@@ -1,12 +1,12 @@
 ;(setq projectile-indexing-method 'alien)
 ;(setq projectile-enable-caching t)
 ;(setq prelude-theme 'zenburn)
-;(setq prelude-theme 'solarized-dark)
+(setq prelude-theme 'solarized-dark)
 
 (setq solarized-termcolors 256)
 (setq solarized-broken-srgb t)
 (setq solarized-scale-org-headlines nil)
-(setq solarized-distinct-fringe-background t)
+(setq solarized-distinct-fringe-background nil)
 (setq projectile-mode-line "Projectile")
 (setq prelude-minimalistic-ui t)
 

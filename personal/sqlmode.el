@@ -87,3 +87,12 @@
             (ejc-set-show-too-many-rows-message t)
             (ejc-set-column-width-limit 150)
             ))
+
+(defun lichtblick-sqlfluff-fix-buffer-model ()
+  "Attempt to fix current model"
+  (interactive)
+
+  (let ((default-directory "~/code/lichtblick/cloud_dwh/dbt/"))
+    (async-shell-command
+     (format "poetry run sqlfluff fix --config ../.sqlfluff --force %s"
+             (shell-quote-argument (buffer-file-name))))))
