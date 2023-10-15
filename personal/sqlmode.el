@@ -94,5 +94,5 @@
 
   (let ((default-directory "~/code/lichtblick/cloud_dwh/dbt/"))
     (async-shell-command
-     (format "poetry run sqlfluff fix --config ../.sqlfluff --force %s"
+     (format "sqlfluff fix --config ../.sqlfluff --force %s"
              (shell-quote-argument (buffer-file-name))))))

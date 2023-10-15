@@ -66,7 +66,7 @@
   :ensure t
   :if (display-graphic-p))
 
-(set-face-background 'fringe "#002b36")
+;(set-face-background 'fringe "#002b36")
 
 (custom-set-faces
   `(fringe ((t (:background nil))))) ; make fringe match the bg
