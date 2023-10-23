@@ -65,6 +65,7 @@
         ("https://emacsredux.com/atom.xml" emacs blog)
                                         ;("https://sachachua.com/blog/feed/" emacs blog)
         ("https://feedpress.me/TheTechnium" blog)
+        ("https://www.construction-physics.com/feed" blog)
 
                                         ; entertainment
         ("https://www.xkcd.com/rss.xml" comic)
