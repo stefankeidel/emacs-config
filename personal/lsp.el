@@ -16,7 +16,7 @@
 
 (use-package lsp-pyright
   :ensure t
-  :hook (python-mode . (lambda ()
+  :hook (python-ts-mode . (lambda ()
                          (require 'lsp-pyright)
                          (lsp-deferred))))  ; or 
 

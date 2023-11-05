@@ -41,3 +41,5 @@ var/
 gotools/
 eln-cache/
 .org-id-locations
+tree-sitter/
+

@@ -28,8 +28,9 @@
                             ("@work" . ?w)
                             ("@move" . ?m)
                             ("@home" . ?h)
-                            ("@routine" . ?r)
+                            ("@routine" . ?t)
                             ("@bike" . ?b)
+                            ("@reading" . ?r)
                             (:endgroup)
                             )))
 
@@ -75,11 +76,7 @@
          ((agenda "" ((org-agenda-span 7)))
           (tags-todo "@work")
           (tags-todo "@home")
-          ))
-        ("r" "Reading list"
-         (
-          (todo "QUEUE")
-          (todo "SAVED")
+          (tags-todo "@reading")
           ))
         ("r" "Reading list"
          (

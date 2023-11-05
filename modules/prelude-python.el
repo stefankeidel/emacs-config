@@ -118,6 +118,8 @@
 
 (add-hook 'python-mode-hook (lambda ()
                               (run-hooks 'prelude-python-mode-hook)))
+(add-hook 'python-ts-mode-hook (lambda ()
+                               (run-hooks 'prelude-python-mode-hook)))
 
 (provide 'prelude-python)
 

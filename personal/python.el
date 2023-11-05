@@ -6,9 +6,14 @@
 ;; (setq python-shell-interpreter "/Users/stefan.keidel/anaconda3/bin/ipython"
 ;;       python-shell-interpreter-args "-i --simple-prompt")
 
-(use-package conda :ensure t)
+;; (use-package conda :ensure t)
 
-(custom-set-variables
- '(conda-anaconda-home "/Users/stefan.keidel/anaconda3"))
+;; (custom-set-variables
+;;  '(conda-anaconda-home "/Users/stefan.keidel/anaconda3"))
 
 (setq flycheck-global-modes '(not python-mode))
+
+;; (use-package pet
+;;   :ensure t
+;;   :config
+;;   (add-hook 'python-base-mode-hook 'pet-mode -10))

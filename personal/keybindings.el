@@ -21,6 +21,7 @@
 (global-set-key (kbd "s-i t") 'lichtblick-dbt-test-model)
 (global-set-key (kbd "s-i f") 'lichtblick-dbt-find-compiled)
 (global-set-key (kbd "s-i d") 'lichtblick-dbt-run-models-downstream)
+(global-set-key (kbd "s-i p") 'treemacs)
 (global-set-key (kbd "s-i k") 'kill-buffer-basename)
 
 ; instead of ace-window in default prelude, which I use through C-x o -- this will cycle through windows
