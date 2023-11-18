@@ -1,7 +1,7 @@
 (use-package dired
   ;; TIP: use ( to hide file information
   :ensure nil
-  :custom ((dired-listing-switches "-agho --group-directories-first"))
+  :custom ((dired-listing-switches "-aglho --group-directories-first"))
   :commands (dired dired-jump)
   :bind (("C-x C-j" . dired-jump))
   :hook
