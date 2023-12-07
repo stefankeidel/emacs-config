@@ -1,7 +1,7 @@
 ;(setq projectile-indexing-method 'alien)
 ;(setq projectile-enable-caching t)
 ;(setq prelude-theme 'zenburn)
-(setq prelude-theme 'solarized-dark)
+;(setq prelude-theme 'solarized-dark)
 
 (setq solarized-termcolors 256)
 (setq solarized-broken-srgb t)
@@ -26,7 +26,7 @@
 (require 'spaceline-config)
 (spaceline-emacs-theme)
 (spaceline-toggle-minor-modes-off)
-(spaceline-toggle-battery-on)
+;(spaceline-toggle-battery-on)
 
 
 ;(setq prelude-theme 'base16-zenburn)
@@ -64,5 +64,3 @@
 ;; ein
 ;; use-package
 ;; plantuml-mode
-(use-package use-package-chords
-  :ensure t)

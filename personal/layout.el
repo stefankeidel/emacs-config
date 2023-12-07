@@ -16,8 +16,8 @@
 (set-face-attribute 'variable-pitch nil
                     :family "Hack Nerd Font")
 
-(set-face-foreground 'secondary-selection "skyblue")
-(set-face-background 'secondary-selection "darkblue")
+;; (set-face-foreground 'secondary-selection "black")
+;; (set-face-background 'secondary-selection "blue")
 
 ;; (require 'doom-modeline)
 ;; (doom-modeline-mode 1)
@@ -31,18 +31,18 @@
 ;; start every frame maximized
 ;(toggle-frame-fullscreen)
 
-(use-package perspective
-  :ensure t
-  :bind
-  ("s-e" . persp-ivy-switch-buffer)         ; or use a nicer switcher, see below
-  :custom
-  (persp-mode-prefix-key (kbd "s-x"))  ; pick your own prefix key here
-  :init
-  (persp-mode))
+;; (use-package perspective
+;;   :ensure t
+;;   :bind
+;;   ("s-e" . persp-ivy-switch-buffer)         ; or use a nicer switcher, see below
+;;   :custom
+;;   (persp-mode-prefix-key (kbd "s-x"))  ; pick your own prefix key here
+;;   :init
+;;   (persp-mode))
 
-(use-package fancy-battery :ensure t)
+;; (use-package fancy-battery :ensure t)
 
-(use-package ztree :ensure t)
+;(use-package ztree :ensure t)
 
 (use-package doom-themes
   :ensure t
@@ -57,7 +57,7 @@
   ;; Enable custom neotree theme (all-the-icons must be installed!)
   (doom-themes-neotree-config)
   ;; or for treemacs users
-  ;(setq doom-themes-treemacs-theme "doom-solarized-dark") ; use "doom-colors" for less minimal icon theme
+  (setq doom-themes-treemacs-theme "doom-colors") ; use "doom-colors" for less minimal icon theme
   (doom-themes-treemacs-config)
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
