@@ -43,3 +43,5 @@ eln-cache/
 .org-id-locations
 tree-sitter/
 quelpa/
+mastodon.plstore
+persist/

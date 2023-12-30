@@ -7,7 +7,7 @@
 (global-set-key (kbd "s-.") 'mc/mark-next-like-this)
 (global-set-key (kbd "s-d") 'mc/mark-all-like-this)
 (global-set-key (kbd "s-,") 'easy-mark)
-(global-set-key (kbd "s-f") 'projectile-ag)
+(global-set-key (kbd "s-f") 'projectile-ripgrep)
 (global-set-key (kbd "s-z") 'avy-goto-char)
 
 (global-set-key (kbd "C-c c") 'counsel-org-capture)
