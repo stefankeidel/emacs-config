@@ -76,7 +76,7 @@
          ((agenda "" ((org-agenda-span 7)))
           (tags-todo "@work")
           (tags-todo "@home")
-          (tags-todo "@reading")
+          ;(tags-todo "@reading")        
           ))
         ("r" "Reading list"
          (
