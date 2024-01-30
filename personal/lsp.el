@@ -18,7 +18,11 @@
   :ensure t
   :hook (python-ts-mode . (lambda ()
                          (require 'lsp-pyright)
-                         (lsp-deferred))))  ; or 
+                         (lsp-deferred)))
+  ;; :custom
+  ;;   (lsp-pyright-python-executable-cmd "python3")
+  ;;   (lsp-pyright-venv-path "~/.cache/pypoetry/virtualenvs/"))
+  )
 
 (use-package lsp-ui
   :ensure t
@@ -43,7 +47,6 @@
 (define-key lsp-ui-mode-map [remap xref-find-definitions] #'lsp-ui-peek-find-definitions)
 (define-key lsp-ui-mode-map [remap xref-find-references] #'lsp-ui-peek-find-references)
 
-;; \
 ;; (use-package poetry
 ;;   :hook
 ;;   (python-mode . (lambda () (when (poetry-venv-exist-p)

@@ -89,10 +89,9 @@
    "~/code/lichtblick/cloud_dwh/dbt/target/compiled/lb_dwh/"
    (concat (file-name-base (buffer-file-name)) ".sql")))
 
-(defun connect-new-srv ()
+(defun connect-srv ()
   (interactive)
   (find-file "/ssh:stefan@janeway#4321:/home/stefan"))
 
 (defun connect-rpi ()
-  (interactive)
   (find-file "/ssh:stefan@raspberrypi:/home/stefan"))
