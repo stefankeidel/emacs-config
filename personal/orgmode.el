@@ -80,6 +80,7 @@
           ))
         ("r" "Reading list"
          (
+          (todo "STARTED")
           (todo "QUEUE")
           (todo "SAVED")
           ))
