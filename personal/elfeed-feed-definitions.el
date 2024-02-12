@@ -95,6 +95,7 @@
         ("https://www.iamtedking.com/blog?format=rss" bikes interesting)
         ("https://www.renehersecycles.com/feed/" bikes interesting)
         ("https://blog.appliedcomputing.io/feed" blog)
+        ("https://blog.openstreetmap.org/feed/" blog interesting)
 
                                         ; trying to keep taps on work stuff
         ("https://meltano.com/blog/feed/" data blog)
