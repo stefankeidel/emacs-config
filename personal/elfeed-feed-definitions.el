@@ -36,69 +36,44 @@
 
 (setq elfeed-feeds
       '(
-                                        ; useful geek stuff
+        ; useful geek stuff
         ("http://nullprogram.com/feed/" programming)
-        ("https://hnrss.org/frontpage" hn maybe) ; spammy custom tag
-        ("https://datawhatnow.com/feed" blog interesting)
-
+        ("https://hnrss.org/frontpage" hn maybe) ; spammy custom tag for Hacker News
+        
         ("https://events.ccc.de/feed/" events security)
         ("https://www.ccc.de/rss/updates.rdf" security)
 
         ("https://www.benkuhn.net/index.xml" blog)
-        ("https://metaredux.com/feed.xml" blog)
+        ("https://metaredux.com/feed.xml" blog interesting)
         ("https://github.blog/feed/atom" blog)
-        ;("http://www.aaronsw.com/2002/feeds/pgessays.rss" blog)
-        ;("http://feeds.feedburner.com/marginalrevolution/feed" blog)
+        ("https://blog.appliedcomputing.io/feed" blog)
+        ("https://blog.openstreetmap.org/feed/" blog interesting)
         ("http://feeds.feedburner.com/martinkl" blog)
-        ("https://www.lesswrong.com/feed.xml?view=curated-rss" blog)
 
-                                        ; emacs
+        ; econ and random stuff
+        ("https://www.lesswrong.com/feed.xml?view=curated-rss" blog)
+        ("https://feedpress.me/TheTechnium" blog)
+        ("https://www.construction-physics.com/feed" blog)
+
+        ; emacs
         ("https://asylum.madhouse-project.org/blog/atom.xml" emacs blog)
         ("http://www.masteringemacs.org/feed/" emacs blog)
         ("https://pragmaticemacs.wordpress.com/feed" emacs blog)
         ("https://emacsredux.com/atom.xml" emacs blog)
-                                        ;("https://sachachua.com/blog/feed/" emacs blog)
-        ("https://feedpress.me/TheTechnium" blog)
-        ("https://www.construction-physics.com/feed" blog)
 
-                                        ; entertainment
+        ; entertainment
         ("https://www.xkcd.com/rss.xml" comic)
 
-                                        ; travel
-        ("https://www.awaywithmaja.com/feed" travel blog)
-
-                                        ;environment
-        ;("https://www.gatesnotes.com/RSS" environment blog)
-
-                                        ; yt
-        ;; ("https://www.youtube.com/feeds/videos.xml?channel_id=UC710HJmp-YgNbE5BnFBRoeg" bikes) ; gcn tech
-        ;; ("https://www.youtube.com/feeds/videos.xml?channel_id=UCuTaETsuCOkJ0H_GAztWt0Q" bikes) ; gcn
-        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCUHW94eEFW7hkUMVaZz4eDg" physics interesting) ; minutephysics
-        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCoxcjq-8xIDTYp3uz647V5A" interesting) ; numberphile
-        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCGamtiY212YK76rDI4IhCGg" bikes) ; cyclingabout
-        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCyG8fDB-wIkdjprZD-0TI6Q" bikes) ; bikepacking.com
-        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCNueufSUUGhQJngFPebQmzw" bikes) ; ted king
-        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCBjf0JkG-PmC359bnUZCjgA" bikes) ; state bicycle co
-        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCHyBWpfAggsFPDc5A7l_eWA" bikes) ; francis cade
-        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCYuKCZ35_lrDmFj2gNuAwZw" bikes) ; trace velo
-        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCiDJtJKMICpb9B1qf7qjEOA") ; adam savage's tested
-        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCm9K6rby98W8JigLoZOh6FQ"); lockpicking lawyer
-        ("https://www.youtube.com/feeds/videos.xml?user=twoodfrd")
-        ;("https://www.youtube.com/feeds/videos.xml?channel_id=UChPQTOpYjCiO1hGbN5CGmpQ"); jack ultra
-        ;("https://www.youtube.com/feeds/videos.xml?channel_id=UC7GV-3hrA9kDKrren0QMKMg"); cinema tyler
-        ("https://www.youtube.com/feeds/videos.xml?channel_id=UCMb0O2CdPBNi-QqPk5T3gsQ"); james coffee dude
-
+        ; bikes
         ("http://feeds.feedburner.com/inrng/inrng0" bikes)
         ("http://feeds.feedburner.com/redkiteprayer/krin" bikes)
         ("https://bikepacking.com/feed/" bikes interesting)
         ("https://fahrradzukunft.de/feed/" bikes)
         ("https://www.iamtedking.com/blog?format=rss" bikes interesting)
         ("https://www.renehersecycles.com/feed/" bikes interesting)
-        ("https://blog.appliedcomputing.io/feed" blog)
-        ("https://blog.openstreetmap.org/feed/" blog interesting)
 
-                                        ; trying to keep taps on work stuff
-        ("https://meltano.com/blog/feed/" data blog)
+        ; trying to keep taps on work stuff
+        ; ("https://meltano.com/blog/feed/" data blog) -- meltano feed is kaputt
         ("https://roundup.getdbt.com/feed" data blog)
         ("https://www.ssp.sh/index.xml" data blog)
         ("https://more-than-numbers.count.co/feed" blog)
