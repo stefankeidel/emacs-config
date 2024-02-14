@@ -183,3 +183,8 @@
           (term-send-input))
         (pop-to-buffer buffer))
     ad-do-it))
+
+(use-package org-download
+  :ensure t)
+
+(setq org-image-actual-width (list 1200))
