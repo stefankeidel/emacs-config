@@ -77,6 +77,9 @@
         ("https://roundup.getdbt.com/feed" data blog)
         ("https://www.ssp.sh/index.xml" data blog)
         ("https://more-than-numbers.count.co/feed" blog)
+        ("https://www.dataengineeringweekly.com/feed" blog)
+        ("https://stkbailey.substack.com/feed" blog)
+        ("https://seattledataguy.substack.com/feed" blog)
         ))
 
 (setq-default elfeed-search-filter "@2-weeks-ago +unread ")
