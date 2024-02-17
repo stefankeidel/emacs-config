@@ -54,6 +54,8 @@
         ("https://www.lesswrong.com/feed.xml?view=curated-rss" blog)
         ("https://feedpress.me/TheTechnium" blog)
         ("https://www.construction-physics.com/feed" blog)
+        ("https://www.optimallyirrational.com/feed" blog)
+        ("https://www.ribbonfarm.com/feed" blog)
 
         ; emacs
         ("https://asylum.madhouse-project.org/blog/atom.xml" emacs blog)
