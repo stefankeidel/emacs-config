@@ -82,6 +82,7 @@
         ("https://www.dataengineeringweekly.com/feed" blog)
         ("https://stkbailey.substack.com/feed" blog)
         ("https://seattledataguy.substack.com/feed" blog)
+        ("https://martinfowler.com/feed.atom" blog)
         ))
 
 (setq-default elfeed-search-filter "@2-weeks-ago +unread ")
