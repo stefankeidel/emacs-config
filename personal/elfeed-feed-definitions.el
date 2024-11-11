@@ -67,7 +67,7 @@
         ("https://www.xkcd.com/rss.xml" comic)
 
         ; bikes
-        ("http://feeds.feedburner.com/inrng/inrng0" bikes)
+        ("https://inrng.com/feed/" bikes)
         ("http://feeds.feedburner.com/redkiteprayer/krin" bikes)
         ("https://bikepacking.com/feed/" bikes interesting)
         ("https://fahrradzukunft.de/feed/" bikes)
