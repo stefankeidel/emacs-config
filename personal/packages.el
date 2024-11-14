@@ -15,3 +15,6 @@
       myPackages)
 
 (require 'multiple-cursors)
+
+(use-package smex
+  :ensure t)
