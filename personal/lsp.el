@@ -56,5 +56,7 @@
 
 (setq lsp-disabled-clients '(tfls))
 (setq lsp-terraform-ls-enable-show-reference t)
+;(setq lsp-disabled-clients '(tfls semgrep-ls))
+;(setq lsp-terraform-server (expand-file-name "/etc/profiles/per-user/stefan.keidel@lichtblick.de/bin/terraform-lsp"))
 (add-hook 'terraform-mode-hook #'lsp)
 

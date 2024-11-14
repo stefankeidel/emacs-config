@@ -8,8 +8,8 @@
   (dired-mode . all-the-icons-dired-mode)
   )
 
-(use-package dired-single
-  :ensure t)
+;; (use-package dired-single
+;;   :ensure t)
 
 (use-package all-the-icons-dired
   :ensure t)
