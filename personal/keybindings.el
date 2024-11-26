@@ -33,3 +33,5 @@
 
 ; use kill ring browser by default
 (global-set-key (kbd "M-y") 'browse-kill-ring)
+
+(global-set-key (kbd "<f2>") 'copilot-accept-completion)
