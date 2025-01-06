@@ -49,6 +49,8 @@
         ("https://blog.appliedcomputing.io/feed" blog)
         ("https://blog.openstreetmap.org/feed/" blog interesting)
         ("http://feeds.feedburner.com/martinkl" blog)
+        ("https://den.dev/index.xml" blog)
+        ("https://industrydecarbonization.com/rss.xml" blog interesting)
 
         ; econ and random stuff
         ("https://www.lesswrong.com/feed.xml?view=curated-rss" blog)
