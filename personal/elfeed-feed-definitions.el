@@ -39,6 +39,7 @@
         ; useful geek stuff
         ("http://nullprogram.com/feed/" programming)
         ("https://hnrss.org/frontpage" hn maybe) ; spammy custom tag for Hacker News
+        ("https://netzpolitik.org/ticker/feed" maybe)
         
         ("https://events.ccc.de/feed/" events security)
         ("https://www.ccc.de/rss/updates.rdf" security)
