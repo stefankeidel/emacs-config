@@ -11,8 +11,9 @@
                    :branch "main"
                    :files ("dist" "*.el"))
   :config
-  (add-to-list 'copilot-indentation-alist '(prog-mode 2))
-  (add-to-list 'copilot-indentation-alist '(python-ts-mode 2))
+  (add-to-list 'copilot-indentation-alist '(prog-mode 0))
+  (add-to-list 'copilot-indentation-alist '(python-ts-mode 0))
+  (add-to-list 'copilot-indentation-alist '(lisp-mode 2))
 )
 
 ;; you can utilize :map :hook and :config to customize copilot
