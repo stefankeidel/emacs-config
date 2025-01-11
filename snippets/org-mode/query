@@ -3,7 +3,7 @@
 # key: q
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region nil))
 # --
-#+begin_src sql
+#+begin_src sql :engine postgresql :dbconnection "accounting"
 select *
-from $0
+from analytics.$0
 #+end_src
