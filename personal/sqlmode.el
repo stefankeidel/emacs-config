@@ -1,7 +1,9 @@
 ;;; FROM https://stackoverflow.com/questions/5734965/how-can-i-get-emacs-sql-mode-to-use-the-mysql-config-file-my-cnf/46114944#46114944
 
 (require 'sql)
-(require 'ob-sql-mode)
+
+(use-package ob-sql-mode
+  :ensure t)
 
 ; .pgpass parser
 (defun read-file (file)
