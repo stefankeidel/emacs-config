@@ -76,7 +76,7 @@
          ((agenda "" ((org-agenda-span 7)))
           (tags-todo "@work")
           (tags-todo "@home")
-          ;(tags-todo "@reading")        
+          ;(tags-todo "@reading")
           ))
         ("r" "Reading list"
          (
@@ -133,7 +133,7 @@
          ;; ;; Dailies
          ;("s-b j" . org-roam-dailies-capture-today)
          )
-         
+
   :config
   (setq org-roam-node-display-template (concat "${title:*} " (propertize "${tags:60}" 'face 'org-tag)))
   (setq org-roam-completion-everywhere t)
@@ -188,3 +188,10 @@
   :ensure t)
 
 (setq org-image-actual-width (list 1200))
+
+(defun disable-whitespace-line ()
+  (interactive)
+  (set (make-local-variable 'whitespace-line-column) 1000000000))
+
+(add-hook 'org-mode-hook 'disable-whitespace-line)
+(add-hook 'markdown-mode-hook 'disable-whitespace-line)
